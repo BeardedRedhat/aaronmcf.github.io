@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Logs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</head>
+
+<body>
+
+<!-------navbar------->
+<nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+        <i class="fa fa-bars"></i>
+    </button>
+
+
+        <div class="collapse navbar-toggleable-xs" id="collapseEx">
+            <a class="navbar-brand" href="myLogs.html" target="_blank">Placement Logs</a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><i class ="material-icons">home</i><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="createEntry.html" data-toggle="tooltip" data-placement="bottom" title="Create Log Entry"><i class="material-icons">mode_edit</i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="myLogs.html" data-toggle="tooltip" data-placement="bottom" title="All Log Entries"><i class="material-icons">list</i></a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="myProfile.html"><i class="material-icons">person</i></a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html" data-toggle="tooltip" data-placement="bottom" title="Feedback"><i class="material-icons">mail_outline</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link navIcon" href="signUp.html"><i class="material-icons">person_add</i></a>
+                </li>
+                <li class="nav-item navIcon">
+                    <a class="nav-link" href="login.html"><i class="material-icons">person_outline</i></a>
+                </li>-->
+            </ul>
+
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+
+</nav>
+
+<div align="center" id="jumbo">
+    <div class="jumbotron" id="jumbotron">
+        <div class="container" id="jumboText">
+            <div class="container create1">
+                <h2><span class="createTitle animated fadeIn">All Log Entries</span></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="view hm-black-strong" id="logBkg">
+    <div class="full-bg-img flex">
+        <ul>
+            <li>
+                <div class="container create">
+                    <h2><span class="createTitle">Create Log Entry</span></h2>
+                    <br>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>-->
+
+<div class="container animated fadeIn">
+
+    <div class="divider-new">
+        <h2 class="h2-responsive animated fadeIn">My Logs</h2>
+    </div>
+
+    <div class="media">
+        <div class="media-left">
+            <a href="myProfile.html" >
+                <img class="img-circle" src="img/me.jpg" width="64px" height="64px" alt="Profile Photo">
+            </a>
+        </div>
+        <div class="media-body">
+            <a NAME="log1"></a>
+            <h4 class="media-heading">Intro to HTML, CSS, audio files and local web storage</h4>
+            <div id="result"></div>
+        </div>
+    </div>
+    <hr />
+
+
+    <div class="media">
+        <div class="media-left">
+            <a href="myProfile.html">
+                <img class="img-circle" src="img/me.jpg" width="64px" height="64px" alt="Profile Photo">
+            </a>
+        </div>
+        <div class="media-body">
+            <a NAME="log2"></a>
+            <h4 class="media-heading">HTML and CSS 2 - Styling and Transitions</h4>
+            <p><i>Tuesday 13th September 2016 </i>- The task this week consisted of mainly CSS styling and transitions.
+                The first part we did was applying a CSS font, which I applied to the body, and a few text effects, such as Italic or bold.
+                In the same css element, I applied a background color to the whole webpage. The next task was to apply a rounded border to
+                an HTML element using CSS. I decided to apply this to the text at the bottom of the sign up page to make it more emphatic and
+                noticeable as it refers to a legal part of a website. I then moved on to applying transitions and opacity to an element. I decided
+                to use the ISArc logo at the top of the jumbotron to scale up by 10% and to go to 80% opacity when it is hovered over (using #id:hover).
+                The final task was to create an unordered list that contains buttons, which is what I used to create my navbar.
+            </p>
+        </div>
+    </div>
+    <hr />
+
+    <div class="media">
+        <div class="media-left">
+            <a href="myProfile.html">
+                <img class="img-circle" src="img/me.jpg" width="64px" height="64px" alt="Profile Photo">
+            </a>
+        </div>
+        <div class="media-body">
+            <a NAME="log3"></a>
+            <h4 class="media-heading">HTML and GUIs</h4>
+            <p><i>Wednesday 14th September 2016 </i>- Today, we were introduced to using a GUI editor, using the W3 validator and creating a
+                repository in GitHub. For the GUI editor we used BlueGriffon, which allowed us to format text and other elements without writing
+                the code. We also practiced inserting HTML tables using the editor, for example, using it for a footer, and changing the tables fill,
+                size etc. We were then introduced to the W3 validator website, which allows you to input your source code of your website and it will
+                check it for errors or bad programming practice. Using this, I was able to identify errors and other obsolete elements and attributes.
+                The final part in todays task was to set up a repository on GitHub and to upload our websites. This is performed using terminal with git
+                commands, and has allowed for the website to be available to the public eye.
+            </p>
+        </div>
+    </div>
+    <hr />
+
+
+    <div class="media">
+        <div class="media-left">
+            <a href="myProfile.html">
+                <img class="img-circle" src="img/me.jpg" width="64px" height="64px" alt="Profile Photo">
+            </a>
+        </div>
+        <div class="media-body">
+            <a NAME="log4"></a>
+            <h4 class="media-heading">Internet Architecture</h4>
+            <p><i>Tuesday 20th September 2016 </i>- This unit is based around the Internet architecture and the various types of networks, bandwidths,
+                protocols etc. that is needed to connect a client to the internet. A client server network is designed to allow the client access to
+                resources from a central computer, i.e a server. The main purpose of this is that it acts as a hub for a number of less powerful computers.
+                The hardware and software that a client needs to successfully connect to the internet is a PC or a device connected to a network card or modem,
+                which will be connected to a router that sends and receives the data packets, and a suitable browser on the device so that it can interpret the
+                data using protocols and display it to the screen.</p>
+            <p>The data is transmitted from the client to the server can vary in speed, in both upload and download times. This is relative to the bandwidth,
+                which is the amount of data that can be transmitted at any given time (usually measured per second). The three types of bandwidth that we looked
+                at was PSTN, ISDN and DSL. PSTN or Public Switched Telephone Network is basically the world’s circuit-switched telephone networks, sometimes referred
+                to as the Plain Old Telephone Service (POTS). ISDN or Integrated Services Digital Network is used for sending voice, video and data over digital or normal
+                telephone lines, which supports transfer rates of around 64 Kbps/s. DSL or Digital Subscriber Line was created to allow high bandwidth transfer rates across
+                all homes and businesses using just normal telephone lines. The speed can range anywhere from 256kbit/s to over 100Mbit/s.</p>
+            <p>When data is transferred from server to the client, it will be just raw data which would be meaningless without protocols. There are various different types
+                of Protocol, such as TCP/IP, HTTP, SMTP or POP3, which are made up of rules so that computers can interpret and read data. Transmission Control Protocol (TCP)
+                is the process of breaking up information that has been sent into smaller pieces, called data packets. These packets are then sent and put back together in the
+                correct order. Internet Protocol (IP) is linked with TCP as it is the final stage in taking the data packets and directing them to the required destination, using
+                an IP address which will be unique to every computer. Hypertext Transfer Protocol or HTTP is most commonly known for being the protocol used for the World Wide
+                Web. It is the process of using TCP/IP to transfer HTML, so that when a URL is entered into a browser, it will fetch and display the webpage. Simple Mail Transfer
+                Protocol (SMTP) and Post Office Protocol version 3 (POP3) are used for the sending and receiving of electronic mail. SMTP is used mainly in the sending of emails,
+                whereas POP3 is used along side to receive emails, as SMTP has a limited ability to queue incoming messages. </p>
+            <p>There is a process of how the internet works, and how we receive data transmissions. It begins with a PC or device that is linked to a router. If, for example,
+                the client enters a URL into a browser, it will send a request to the closest Point of Presence, which is run by your Internet service provider. It will then send
+                back the necessary data back to the router/modem. If, however, you require information from another country or ISP, it will then find the closest Internet Exchange
+                Point (IXP), which will cover several thousand POP’s. It is then sent back to the POP, then back to the client. This process can result in longer loading times, but
+                in reality, is a very efficient way of networks to exchange information, as well as reducing costs.</p>
+            <p>When a user has entered a domain to take them to a website, the IP address needs to be located. This is where Domain Name Systems (DNS) comes into play as it acts
+                as an address book for IP’s, making it an essential component of the internet. The way that an IP address will be located is by the naming structure, i.e, the prefix
+                (http) tells us that we want to use the Hypertext transfer protocol and that we are communicating with the World Wide web. The subdomain (www.) also tells us that we
+                are searching the WWW. The domain name is the next part (example.com), which is the website unique identifier, as no two websites will have the same domain. The last
+                part of the domain name (.com) is called the extension, which tells us what type of website is being run, e.g. .com, .org and .net are all top level domain names with
+                unrestricted open domains, whereas .co.uk or .org.uk are secondary level domains (.uk being the secondary level) with open access.</p>
+            <p>For companies that want to have multiple websites under the same server, there is shared domains, allowing a more economical approach to hosting multiple websites. Shared
+                domains will use a different subdomain with the original domain, for example, Google will have www.google.com, maps.google.com, mail.google.com etc. for each of their
+                different sites. </p>
+            <p>The rate in which technology is developing and growing into our day-to-day lives is quite rapid compared to 15 years ago. Due to its importance, we would be almost lost
+                without it. A more recent development in remote servers is the cloud, which basically allows users/businesses to store, manage and process data onto external servers
+                rather than locally, meaning that we can access it anywhere (as long as theres an internet connection). Cloud computing has proved to be beneficial in providing better
+                disaster recovery, increased collaboration between users and more environmentally friendly. However, cloud computing does have particular drawbacks, with the main one
+                being that internet access is always required to retrieve from the cloud, meaning that if the internet went down, no-one can access their files. Another major issue is
+                security, as if it is a shared cloud in a businesses for example, it could be easy for the wrong person to get access, or malicious software attacks would be targeted
+                more toward the cloud. </p>
+            <p>Really Simple Syndication or RSS is a technology that allows you to keep track of updates on websites using a standardised XML format, then shown in an aggregator (reader).
+                RSS feeds allows you to have complete control over what you receive without even entering an email address, meaning no spam, viruses, phishing etc. However, Atom, which is
+                an alternative to RSS was created to address some of the flaws it had, such as differentiating between relative and non-relative URL’s, providing each entry with a globally
+                unique ID, and creating “autodiscovery”, which allows feed aggregators to automatically detect if there is a feed.</p>
+        </div>
+    </div>
+    <hr />
+</div>
+
+<script>
+    if (typeof(Storage) !== "undefined")
+    {
+        //alert("Local storage working");
+        // Store
+        localStorage.setItem("user", "Aaron McFarland");
+        localStorage.setItem("entry", "HTML and CSS 2 - Styling and Transitions");
+        localStorage.setItem("date", "Tuesday 13th September 2016");
+        localStorage.setItem("log", " Thursday 8th September 2016 - The first task was to create a blank HTML file called 'index', " +
+                "containing the basic components, such as the html, head and body tags. The next step " +
+                "was to add in a header, an introduction paragraph, a table of contents and a hyperlink " +
+                "to the W3schools website. I then created an external css file, meaning that I could format" +
+                " the elements created, changing the font, size, colour and position. The table and header " +
+                "were then set to fluid. Two audio files, one .mp3 and the other .ogg, were inserted into the " +
+                "webpage, along with an audio player and controls. The final element inserted was an API, more" +
+                " specifically a local web storage. This was put into an if statement that checks if the computer " +
+                "is capable of storing data, and if so, it stores and retrieves the information.");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("log");
+    }
+    else
+    {
+        alert("Sorry, no local storage support");
+    }
+</script>
+
+<!------------Footer------------>
+<footer class="page-footer center-on-small-only">
+
+    <!----left about me section---->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 offset-md-1">
+                <h5 class="title">ABOUT ME</h5>
+                <p>I am currently a student at Ulster University undergoing placement year at ISArc.</p>
+                <p>This website was created as part of a project for a Level 3 RQF in Web Design and Development using Material Design, Bootstrap, HTML5, CSS3, JavaScript, jQuery and PHP. </p>
+
+                <br>
+                <div>
+                    <img src="img/html5.png" alt="HTML5">&nbsp;
+                    <img src="img/css3.png" alt="CSS3">&nbsp;
+                    <img src="img/javascript.png" alt="JavaScript">&nbsp;
+                    <img src="img/php.png" alt="PHP">&nbsp;
+                </div>
+                <br>
+                <audio controls>
+                    <source src="audio1.mp3" type="audio/mpeg">
+                    <source src="audio1.ogg" type="audio/ogg">
+                    Your browser does not support mp3/ogg audio files.
+                </audio>
+            </div>
+
+            <hr class="hidden-md-up">
+
+            <!----middle contact section---->
+            <div class="col-md-4 offset-md-1">
+                <h5 class="title">Contact Me</h5>
+                <ul>
+                    <li><i>Tel:</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(028) 9446 0000</li>
+                    <li><i>Mob:</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07868 426555</li>
+                    <li><i>Email:</i>&nbsp;&nbsp;&nbsp;aaron.mcfarland@isarc.co.uk</li>
+                    <li>&nbsp;</li>
+                    <li>Or if you wish to leave direct feedback, please visit our <a href="feedback.html" id="feedbackLink">feedback</a> page.</li>
+                    <li>&nbsp;</li>
+                    <li>Why not visit:</li>
+                    <li>
+                        <a href="http://www.w3schools.com"><img src="img/w3schoolsLogo.png" class="logo transition"></a>&nbsp;&nbsp;&nbsp;
+                        <a href="http://getbootstrap.com"><img src="img/bootstrap.png" class="logo1 transition"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="hidden-md-up">
+
+            <!----right find us section---->
+            <div class="col-md-2">
+                <h5 class="title">Find Us</h5>
+                <ul>
+                    <li>ISArc Limited</li>
+                    <li>Ostix House</li>
+                    <li>1 Hillmans Court</li>
+                    <li>Ballycastle Road</li>
+                    <li>Coleraine</li>
+                    <li>BT52 2DF</li>
+                    <li>&nbsp;</li>
+                    <li><a href="https://www.ulster.ac.uk">Ulster University</a></li>
+                    <li>Cromore Rd</li>
+                    <li>Coleraine</li>
+                    <li>BT52 1SA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!----social media icons---->
+    <hr>
+    <div class="call-to-action">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/ISArcLimited/?fref=ts&ref=br_tf"><img src="img/facebook-box2.png" class="transition"></a>&nbsp;&nbsp;
+                <a href="https://uk.linkedin.com/in/aaron-mcfarland-18905312a"><img src="img/linkedin-box.png" class="transition"></a>&nbsp;&nbsp;
+                <a href="#"><img src="img/github-box.png" class="transition"></a>&nbsp;&nbsp;
+                <a href="#"><img src="img/pinterest-box.png" class="transition"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            <p class="handwriting">Created by Aaron McFarland</p>
+        </div>
+    </div>
+
+</footer>
+
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-------navbar------->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <a class="navbar-brand" href="myLogs.html" target="_blank">Placement Logs</a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><i class ="material-icons">home</i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createEntry.html" data-toggle="tooltip" data-placement="bottom" title="Create Log Entry"><i class="material-icons">mode_edit</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myLogs.html" data-toggle="tooltip" data-placement="bottom" title="All Log Entries"><i class="material-icons">list</i></a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="myProfile.html"><i class="material-icons">person</i></a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" data-toggle="tooltip" data-placement="bottom" title="Feedback"><i class="material-icons">mail_outline</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link navIcon" href="signUp.html"><i class="material-icons">person_add</i></a>
+                    </li>
+                    <li class="nav-item navIcon">
+                        <a class="nav-link" href="login.html"><i class="material-icons">person_outline</i></a>
+                    </li>-->
+                </ul>
+
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="Search">
+                </form>
+            </div>
+
+    </nav>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <!----------Intro page with background---------->
+    <div class="view hm-black-strong">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <a href="http://www.isarc.co.uk"><img src="isarcWhite.png" id="jumboLogo" alt="ISArc logo" class="animated fadeIn"></a>
+                </li>
+                <li>
+                    <h1 class="animated fadeIn">Placement Logs</h1></li>
+                <li>
+                    <div class="container">
+                        <p class="animated fadeIn">Begin by clicking View Logs or Create a Log:</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="myLogs.html" class="btn btn-white-outline btn-md animated fadeInLeft">View Logs</a>
+                    <a href="createEntry.html" class="btn btn-white-outline btn-md animated fadeInRight">Create a Log</a>
+                </li>
+                <li>
+                    <p class="handwriting animated fadeIn">Created by Aaron McFarland</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-------Introduction and my info------->
+    <div class="container">
+        <div class="container">
+            <div class="divider-new">
+                <h2 class="h2-responsive">Welcome</h2>
+            </div>
+            <section id="about">
+                <p class="introFormat">Welcome to my website. This has been created as a project for the purpose of logging Placement logs and to demonstrate
+                    what we have learned throughout our qualification. It uses a mix of Material Design, Bootstrap, HTML, CSS, JavaScript and jQuery to give you a more
+                    user friendly experience, but also keeping it simple and making sure that all functions are easily accessible and displayed.
+                    Scroll down to see more about me, and to begin creating your own logs. For your benefit, we have put the contents table for your logs, both, at the bottom of the home page and the logs page.</p>
+            </section>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container" align="center">
+                    <img class="img-circle" id="img-circle" src="img/me.jpg" alt="My photo">
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <p class="introFormat">Hi, my names Aaron and this is my project website. I am currently a third year student at Ulster University (Coleraine Campus) studying BSc (Hons) Computing with Business.
+                    During this year, I am undergoing work placement at ISArc, a Coleraine based software company, where we are being trained for the first 8 weeks by NowThis to acheive a Level 3 RQF in Web Design
+                    and Development, then begin working on Information Systems for the company. I have always been keen to create and design functioning websites ever since my school years, flourishing my
+                    interest to pursue a career in this industry. Since I began university, I have acquired knowledge in various programming languages, such as C++ or Java, but also building on my web design skillset
+                    in HTML5, CSS3, JavaScript, PHP and jQuery. </p>
+
+                <p class="introFormat">My aim for this website is to have fresh, modern aesthetics, but also keeping the simplicity throughout the website so that there is no clutter or unnecessary content taking up your
+                    screen. It aims to provide the necessary functions needed, but to have it all just one click away.</p>
+                <br>
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="divider-new">
+            <h2 class="h2-responsive">Get Started</h2>
+        </div>
+
+
+        <!-------card no.1 - Create Log Entry------->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="view overlay hm-white-strong">
+                        <img src="img/createEntry.png" class="img-fluid" alt="Create Entry Image">
+                        <a href="createEntry.html">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="card-block">
+                        <h4 class="card-title">Create a new Log Entry</h4>
+                        <p class="card-text">Click 'Create' below to start a new log entry. Any entries you create will appear in the My Logs page or in the table below.</p>
+                        <a href="createEntry.html" class="btn btn-danger">Create</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-------card no.2 - View Log Entries------->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="view overlay hm-white-strong">
+                        <img src="img/myLogsImg.png" class="img-fluid" alt="My Logs Image">
+                        <a href="myLogs.html">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="card-block">
+                        <h4 class="card-title">View all your Log Entries</h4>
+                        <p class="card-text">Here you can view all your logs you've created to date. Click 'View' to see them all or you can use the table below.</p>
+                        <a href="myLogs.html" class="btn btn-danger">View</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-------card no.3 - Leave Feedback------->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="view overlay hm-white-strong">
+                        <img src="img/feedbackBkg.png" class="img-fluid" width="1110px" height="740px" alt="">
+                        <a href="myProfile.html">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="card-block">
+                        <h4 class="card-title">Leave Feedback</h4>
+                        <p class="card-text">Here you can let me know if there are any problems or queries, I will do my best to reply to you ASAP.</p>
+                        <a href="myProfile.html" class="btn btn-danger">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <!------------Logs table------------>
+    <div class="view view1 hm-black-strong">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <div class="divider-new">
+                        <h2 class="h2-responsive">Logs</h2>
+                    </div>
+                </li>
+                <li>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th class="userCol">User</th>
+                            <th class="titleCol">Log Title</th>
+                            <th class="dateCol">Date Created</th>
+                            <th class="viewCol">&nbsp;</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>Intro to HTML, CSS, audio files and local web storage</td>
+                            <td>Thursday 8th September 2016</td>
+                            <td align="center"><a href="myLogs.html#log1" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>HTML and CSS 2 - Styling and Transitions</td>
+                            <td>Tuesday 13th September 2016</td>
+                            <td align="center"><a href="myLogs.html#log2" data-toggle="tooltip" data-placement="bottom" title="View"<i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>HTML and GUIs</td>
+                            <td>Wednesday 14th September 2016</td>
+                            <td align="center"><a href="myLogs.html#log3" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>Internet Architecture</td>
+                            <td>Tuesday 20th September 2016</td>
+                            <td align="center"><a href="myLogs.html#log4" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td align="center"><a href="#" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td align="center"><a href="#" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td align="center"><a href="#" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td align="center"><a href="#" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Aaron McFarland</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td align="center"><a href="#" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition">search</i></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!----text with rounded borders----
+                    <div class="container">
+                        <p id="signUp">By clicking 'Sign Up', you are agreeing to our <a href="#">terms & conditions</a> and our Privacy Policy. Your email or any
+                            other personal details will not be shared or sold to any third party businesses or personnel.
+                        </p>
+                    </div>-->
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------Footer------------>
+    <footer class="page-footer center-on-small-only">
+
+        <!----left about me section---->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 offset-md-1">
+                    <h5 class="title">ABOUT ME</h5>
+                    <p>I am currently a student at Ulster University undergoing placement year at ISArc.</p>
+                    <p>This website was created as part of a project for a Level 3 RQF in Web Design and Development using Material Design, Bootstrap, HTML5, CSS3, JavaScript, jQuery and PHP. </p>
+
+                    <br>
+                    <div>
+                        <img src="img/html5.png" alt="HTML5">&nbsp;
+                        <img src="img/css3.png" alt="CSS3">&nbsp;
+                        <img src="img/javascript.png" alt="JavaScript">&nbsp;
+                        <img src="img/php.png" alt="PHP">&nbsp;
+                    </div>
+                    <br>
+                    <audio controls>
+                        <source src="audio1.mp3" type="audio/mpeg">
+                        <source src="audio1.ogg" type="audio/ogg">
+                        Your browser does not support mp3/ogg audio files.
+                    </audio>
+                </div>
+
+                <hr class="hidden-md-up">
+
+                <!----middle contact section---->
+                <div class="col-md-4 offset-md-1">
+                    <h5 class="title">Contact Me</h5>
+                    <ul>
+                        <li><i>Tel:</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(028) 9446 0000</li>
+                        <li><i>Mob:</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07868 426554</li>
+                        <li><i>Email:</i>&nbsp;&nbsp;&nbsp;aaron.mcfarland@isarc.co.uk</li>
+                        <li>&nbsp;</li>
+                        <li>Or if you wish to leave direct feedback, please visit our <a href="feedback.html" id="feedbackLink">feedback</a> page.</li>
+                        <li>&nbsp;</li>
+                        <li>Why not visit:</li>
+
+                        <li>
+                            <a href="http://www.w3schools.com"><img src="img/w3schoolsLogo.png" class="logo transition"></a>&nbsp;&nbsp;&nbsp;
+                            <a href="http://getbootstrap.com"><img src="img/bootstrap.png" class="logo1 transition"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="hidden-md-up">
+
+                <!----right find us section---->
+                <div class="col-md-2">
+                    <h5 class="title">Find Us</h5>
+                    <ul>
+                        <li>ISArc Limited</li>
+                        <li>Ostix House</li>
+                        <li>1 Hillmans Court</li>
+                        <li>Ballycastle Road</li>
+                        <li>Coleraine</li>
+                        <li>BT52 2DF</li>
+                        <li>&nbsp;</li>
+                        <li><a href="https://www.ulster.ac.uk">Ulster University</a></li>
+                        <li>Cromore Rd</li>
+                        <li>Coleraine</li>
+                        <li>BT52 1SA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!----social media icons---->
+        <hr>
+        <div class="call-to-action">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ISArcLimited/?fref=ts&ref=br_tf"><img src="img/facebook-box2.png" class="transition"></a>&nbsp;&nbsp;
+                    <a href="https://uk.linkedin.com/in/aaron-mcfarland-18905312a"><img src="img/linkedin-box.png" class="transition"></a>&nbsp;&nbsp;
+                    <a href="#"><img src="img/github-box.png" class="transition"></a>&nbsp;&nbsp;
+                    <a href="#"><img src="img/pinterest-box.png" class="transition"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                <p class="handwriting">Created by Aaron McFarland</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+</html>

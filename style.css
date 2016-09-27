@@ -1,0 +1,293 @@
+html,
+body,
+.view {
+    height: 100%;
+}
+
+a {
+    color: white !important;
+}
+
+.row {
+    padding-top: 3em;
+}
+
+.navbar {
+     background-color: transparent;
+ }
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+footer.page-footer {
+    background-color: #1C2331;
+    margin-top: -1px;
+    padding-top: 0 !important;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+.flex {
+    padding-top: 100px;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+.view {
+    background: url("http://mdbootstrap.com/images/regular/city/img%20(6).jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.view1 {
+    background: url(img/img1.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#logBkg {
+    background: url(img/myLogs1.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#createBkg {
+    background: url(img/write.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#profileBkg {
+    background: url(img/profileBkg.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#jumbotron {
+    background: url(img/myLogs1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 120px;
+}
+
+#jumbotronFeed {
+    background: url(img/myProfile.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 120px;
+}
+
+.create1 {
+    padding-top: 100px;
+}
+
+#jumboLogo {
+    transition: 0.5s;
+    padding-top: 40px;
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jumboLogo:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    opacity: 0.8;
+}
+
+.handwriting {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+}
+
+.media {
+    padding-top: 20px;
+}
+
+#form5, #form6, #form7, #form8 {
+    color: white;
+}
+
+.createTitle {
+    color: white;
+    font: bold 40px/75px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.center {
+    margin: auto;
+}
+
+#signUpForm {
+    text-align: center;
+}
+
+.table-striped {
+    text-align: left;
+    font-size: 14px;
+}
+
+.table-striped.tr {
+    !important;
+    line-height: 20px;
+}
+
+.table-striped tr:hover {
+    font-weight: 500;
+}
+
+.userCol, .dateCol {
+    width: 27.5%;
+}
+
+.titleCol {
+    width: 40%;
+}
+
+.viewCol {
+    width: 5%;
+}
+
+#img-circle {
+    box-shadow: 10px 10px 5px #888888;
+    width: 175px;
+    height: 175px;
+}
+
+.introFormat {
+    text-align: justify;
+}
+
+#feedbackLink {
+    font-weight: bold !important;
+    text-decoration: underline;
+
+}
+
+#feedbackLink:hover {
+    text-decoration: underline;
+}
+
+#signUp { /****************************
+    background-color: #ede8ee;      ***
+    border-radius: 10px;            ***
+    font-size: 13px;                ***
+    text-align: center;             ***/
+}
+
+.logo {
+    width: 133px;
+    height: 45px;
+}
+
+.logo1 {
+    width: 200px;
+    height: 45px;
+}
+
+.transition {
+    transition: 0.2s;
+}
+
+.transition:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    opacity: 0.8;
+}
+
+.feedback {
+    color: black !important;
+}
+
+#homeLink {
+    color: #377bb5 !important;
+}
+
+#homeLink:hover {
+    text-decoration: underline !important;
+    color: #377bb5;
+}
+
+.feedbackSuccess {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#padding {
+    padding-bottom: 70px;
+}
+/**********************create image page*****************************/
+#img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#img1 {
+    width: 50%;
+    height: 50%;
+}
+
+.image {
+    position: relative;
+    width: 1110px;
+    height: 740px;
+}
+
+#h2 {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+
+}
+
+#h2 span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 40px;
+}
+
+
+
+
+
+
