@@ -48,7 +48,7 @@ footer.page-footer {
 }
 
 .view {
-    background: url("http://mdbootstrap.com/images/regular/city/img%20(6).jpg")no-repeat center center fixed;
+    background: url(img/img1.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
