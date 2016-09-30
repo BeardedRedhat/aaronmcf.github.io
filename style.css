@@ -170,8 +170,12 @@ footer.page-footer {
     font-weight: 500;
 }
 
-.userCol, .dateCol {
+.userCol {
     width: 27.5%;
+}
+
+.dateCol {
+    width: 17.5%;
 }
 
 .titleCol {
