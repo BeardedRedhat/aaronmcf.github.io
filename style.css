@@ -195,8 +195,7 @@ footer.page-footer {
 }
 
 #img-circle1 { /* Home page pic*/
-    !important;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888 !important;
     width: 175px;
     height: 175px;
 }
