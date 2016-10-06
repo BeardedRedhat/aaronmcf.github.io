@@ -31,9 +31,9 @@ if( empty($errors))
     $to = $myemail;
     $email_subject = "Feedback form submission: $name";
     $email_body = "You have received a new feedback message. ".
-        " \n\n Name: $name \n ".
-        "Email: $email_address\n ".
-        "Subject: $subject \n ".
+        " \n\n Name: $name \n\n ".
+        "Email: $email_address\n\n ".
+        "Subject: $subject \n\n ".
         "Feedback: $feedback";
     $headers = "From: $myemail\n";
     $headers .= "Reply-To: $email_address";

@@ -3,21 +3,21 @@
  */
 
 
-function log(name, entryDate, content)
+function log(name, entryDate, content)      //object
 {
-    this.logName = name;
+    this.logName = name;                    //properties
     this.logContent = content;
     this.logEntryDate = entryDate;
 }
 
 
-function checkContent(content)
+function checkContent(content)              //checking if content is present in text area
 {
     return Boolean(content);
 }
 
 
-function createLog()
+function createLog()                        
 {
     if(document.getElementById("form8") == null)
     {
