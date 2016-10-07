@@ -17,7 +17,7 @@ function checkContent(content)              //checking if content is present in 
 }
 
 
-function createLog()                        
+function createLog()
 {
     if(document.getElementById("form8") == null)
     {
