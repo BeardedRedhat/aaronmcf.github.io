@@ -395,7 +395,7 @@ footer.page-footer {
 }
 .cd-top.cd-fade-out {
     /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-    opacity: 1;
+    opacity: 0.9;
 }
 .no-touch .cd-top:hover {
     background-color: #1c2330;

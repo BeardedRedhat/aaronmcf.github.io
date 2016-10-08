@@ -19,60 +19,95 @@ function checkContent(content)              //checking if content is present in 
 
 function createLog()
 {
-    if(document.getElementById("textarea") == null)
-    {
-        alert("Cannot find text box");
-    }
-    else
-    {
-        var title = document.getElementById("form6").value;
-        var date = document.getElementById("form7").value;
-        var content = document.getElementById("textarea").value;
-        var hasContent = checkContent(content);
+    var passwordCheck = "placementlogs123";
+    var attempt = 3;
 
-        if(hasContent)
+    do
+    {
+        var password = prompt("Please enter password to continue:");
+        if(password == null)
         {
-            var logEntry = new log(title, date, content);
-
-            localStorage.setItem(title, JSON.stringify(logEntry));
-
-            var retrieveLog = JSON.parse(localStorage.getItem(title));
-            document.getElementById("output1").innerText = retrieveLog.logName;
-            document.getElementById("output2").innerText = retrieveLog.logEntryDate;
-            document.getElementById("output3").innerText = retrieveLog.logContent;
+            return;
         }
         else
         {
-            alert("Oops! No log content has been entered");
-        }
-    }
-}
+            if (passwordCheck == password)
+            {
+                if (document.getElementById("textarea") == null)
+                {
+                    alert("Cannot find text box");
+                }
 
-jQuery(document).ready(function($){
-    // browser window scroll (in pixels) after which the "back to top" link is shown
+                else
+                {
+                    var title = document.getElementById("form6").value;
+                    var date = document.getElementById("form7").value;
+                    var content = document.getElementById("textarea").value;
+                    var hasContent = checkContent(content);
+
+                    if (hasContent)
+                    {
+                        var logEntry = new log(title, date, content);
+
+                        localStorage.setItem(title, JSON.stringify(logEntry));
+
+                        var retrieveLog = JSON.parse(localStorage.getItem(title));
+                        document.getElementById("output1").innerText = retrieveLog.logName;
+                        document.getElementById("output2").innerText = retrieveLog.logEntryDate;
+                        document.getElementById("output3").innerText = retrieveLog.logContent;
+                    }
+
+                    else
+                    {
+                        alert("Oops! No log content has been entered");
+                    }
+                }
+            }
+
+            else
+            {
+                attempt--;
+                alert("Incorrect password. You have " + attempt + " attempts left.");
+
+                if (attempt == 0)
+                {
+                    document.getElementById("postEntryBtn").disabled = true;
+                    window.location.href = "index.html";
+                }
+            }
+        }
+
+    }while(attempt !== 0);
+
+}//function createLog
+
+
+
+
+//***************** scroll to top button in my logs page **********************//
+jQuery(document).ready(function($)
+{
     var offset = 300,
-        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
         offset_opacity = 1200,
-        //duration of the top scrolling animation (in ms)
         scroll_top_duration = 700,
-        //grab the "back to top" link
         $back_to_top = $('.cd-top');
 
-    //hide or show the "back to top" link
-    $(window).scroll(function(){
+    $(window).scroll(function()
+    {
         ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-        if( $(this).scrollTop() > offset_opacity ) {
+
+        if( $(this).scrollTop() > offset_opacity )
+        {
             $back_to_top.addClass('cd-fade-out');
         }
     });
 
-    //smooth scroll to top
-    $back_to_top.on('click', function(event){
+    $back_to_top.on('click', function(event)
+    {
         event.preventDefault();
         $('body,html').animate({
                 scrollTop: 0 ,
             }, scroll_top_duration
         );
     });fd
-
 });
