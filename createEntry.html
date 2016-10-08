@@ -52,7 +52,7 @@
     </button>
 
         <div class="collapse navbar-toggleable-xs" id="collapseEx">
-            <a class="navbar-brand" href="myLogs.html" target="_blank">Placement Logs</a>
+            <a class="navbar-brand" target="_blank">Placement Logs</a>
             <ul class="nav navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><i class ="material-icons">home</i><span class="sr-only">(current)</span></a>
@@ -97,45 +97,48 @@
 
 <div class="view hm-black-strong" id="createBkg">
     <div class="full-bg-img flex">
-        <div class="center">
+        <div class="center" align="center">
             <ul>
                 <li>
                     <div class="container create">
                         <h2><span class="createTitle animated fadeIn">Create Log Entry</span></h2>
-                        <br>
+                        <br><br>
                     </div>
                 </li>
                 <li>
                     <div class="container create">
-                        <div class="md-form col-sm-6">
+                        <div class="md-form col-sm-4 offset-sm-2">
                             <input placeholder="Enter first and last name" type="text" id="form5" class="form-control animated fadeIn">
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <div class="md-form col-sm-6">
-                            <input placeholder="Enter Log title" type="text" id="form6" class="form-control animated fadeIn">
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <div class="md-form col-sm-6">
+                        <div class="md-form col-sm-4 ">
                             <input placeholder="Enter Date, e.g Fri 5th Sep 2016" type="text" id="form7" class="form-control animated fadeIn">
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="container">
-                        <div class="md-form col-sm-8">
-                            <textarea type="text" id="form8" placeholder="Enter Log" class="md-textarea animated fadeIn"></textarea>
+                        <div class="md-form col-sm-8 offset-sm-2">
+                            <input placeholder="Enter Log title" type="text" id="form6" class="form-control animated fadeIn">
+                        </div>
+                    </div>
+                </li>
+                <!--<li>
+                    <div class="container">
+                        <div class="md-form col-sm-6">
+                            <input placeholder="Enter Date, e.g Fri 5th Sep 2016" type="text" id="form7" class="form-control animated fadeIn">
+                        </div>
+                    </div>
+                </li>-->
+                <li>
+                    <div class="container">
+                        <div class="md-form col-sm-8 offset-sm-2">
+                            <textarea type="text" id="textarea" placeholder="Enter Log" class="md-textarea animated fadeIn"></textarea>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="container">
-                        <a href="myLogs.html" class="btn btn-white-outline btn-md animated fadeIn" onclick="createLog()">Post Entry</a>
+                        <a href="#" class="btn btn-white-outline btn-md animated fadeIn" onclick="createLog()">Post Entry</a>
                     </div>
                 </li>
             </ul>
@@ -144,6 +147,11 @@
 </div>
 
 <script type="text/javascript" src="java.js"></script>
+<script type="text/javascript">
+
+    $('#textarea').trigger('autoresize');
+
+</script>
 
 <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="js/tether.min.js"></script>

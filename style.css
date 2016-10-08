@@ -2,7 +2,7 @@ html,
 body,
 .view {
     height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
 }
 
 .normalHprLink {
@@ -144,7 +144,7 @@ footer.page-footer {
     padding-top: 20px;
 }
 
-#form5, #form6, #form7, #form8 {
+#form5, #form6, #form7, #textarea {
     color: white;
 }
 

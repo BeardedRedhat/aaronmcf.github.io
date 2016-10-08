@@ -19,7 +19,7 @@ function checkContent(content)              //checking if content is present in 
 
 function createLog()
 {
-    if(document.getElementById("form8") == null)
+    if(document.getElementById("textarea") == null)
     {
         alert("Cannot find text box");
     }
@@ -27,7 +27,7 @@ function createLog()
     {
         var title = document.getElementById("form6").value;
         var date = document.getElementById("form7").value;
-        var content = document.getElementById("form8").value;
+        var content = document.getElementById("textarea").value;
         var hasContent = checkContent(content);
 
         if(hasContent)
