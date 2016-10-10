@@ -40,8 +40,8 @@ function createLog()
 
                 else
                 {
-                    var title = document.getElementById("form6").value;
-                    var date = document.getElementById("form7").value;
+                    var title = document.getElementById("logTitle").value;
+                    var date = document.getElementById("date").value;
                     var content = document.getElementById("textarea").value;
                     var hasContent = checkContent(content);
 
