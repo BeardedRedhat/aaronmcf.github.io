@@ -11,24 +11,11 @@ function log(name, entryDate, content)      //object
 }//function log()
 
 
-function hasTags(content)
-{
-    if(content.search('<') >= 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
-
 
 function checkContent(content)              //checking if content is present in text area
 {
     return Boolean(content);
-}//function checkContent()
+}
 
 
 
@@ -39,7 +26,7 @@ function createLog()
 
     do
     {
-        var password = prompt("Please enter password to continue:");
+        var password = prompt("Password:");
         if(password == null)
         {
             return;
@@ -82,7 +69,7 @@ function createLog()
             else
             {
                 attempt--;
-                alert("Incorrect password. You have " + attempt + " attempts left.");
+                alert("Incorrect Password. You have " + attempt + " attempts left.");
 
                 if (attempt == 0)
                 {
@@ -105,7 +92,7 @@ function editLog()
 
     do
     {
-        var password = prompt("Please enter password to edit logs:" );
+        var password = prompt("Password:" );
         if(password == null)
         {
             return;
@@ -114,7 +101,7 @@ function editLog()
         {
             if (passwordCheck == password)
             {
-                alert("Click on any log to edit");
+                alert("Click on any paragraph to edit");
                 var edit = document.getElementsByClassName("logEdit");
                 for(var x= 0; x<edit.length; x++)
                 {
@@ -124,7 +111,7 @@ function editLog()
             else
             {
                 attempt--;
-                alert("Incorrect password. You have " + attempt + " attempts left");
+                alert("Incorrect Password. You have " + attempt + " attempts left");
 
                 if (attempt == 0)
                 {
