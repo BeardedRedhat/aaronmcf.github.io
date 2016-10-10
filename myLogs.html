@@ -58,7 +58,7 @@
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="editLog()" data-toggle="tooltip" data-placement="bottom" title="Edit Logs"><i class="material-icons">text_fields</i></a>
+                    <a class="nav-link" onclick="editLog()" data-toggle="tooltip" data-placement="bottom" title="Edit Logs" id="editLogBtn"><i class="material-icons">text_fields</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
@@ -193,7 +193,7 @@
 
             <h4 class="media-heading">Intro to HTML, CSS, Audio files and Local Web Storage</h4>
             <p><i>Thursday 8th September 2016</i></p>
-            <p><div id="result" class="logEdit"></div></p>
+            <p><div id="result"></div></p>
         </div>
     </div>
     <hr />
@@ -530,18 +530,18 @@
         localStorage.setItem("user", "Aaron McFarland");
         localStorage.setItem("entry", "Intro to HTML, CSS, Audio files and Local Web Storage");
         localStorage.setItem("date", "Thursday 8th September 2016");
-        localStorage.setItem("log", "<p>" + "The first task was to create a blank HTML file called 'index', containing the basic structure that makes up a website, i.e &lthtml&gt, &lthead&gt, &ltbody&gt " +
+        localStorage.setItem("log", "<p class='logEdit'>" + "The first task was to create a blank HTML file called 'index', containing the basic structure that makes up a website, i.e &lthtml&gt, &lthead&gt, &ltbody&gt " +
                 "tags. The html tag tells us what language we are going to program in, then below that the head tag will contain any links or scripts needed for the page. The body tag will contain " +
                 "all the elements needed to make up the webpage.  The next step was to add in a header, an introduction paragraph, a table of contents and a hyperlink to the W3schools website. The " +
                 "header is inserted using a &lth&gt tag, followed by a number between 1 & 7 (determines the size of the header with 1 being the largest). The paragraph was inserted by using the &ltp&gt " +
-                "tag, telling the computer that we want to insert a paragraph." + "</p><p>" + "The table is a bit more than just one tag as we need to tell the computer when to insert rows, column etc. It starts with a " +
+                "tag, telling the computer that we want to insert a paragraph." + "</p><p class='logEdit'>" + "The table is a bit more than just one tag as we need to tell the computer when to insert rows, column etc. It starts with a " +
                 "&lttable&gt opening tag, followed by a &lttr&gt, telling us that we want to insert a row. Inside that tag, we use a series of &lttd&gt tags, which will determine how many columns we want. As " +
                 "the very first row in a table is usually a header, we can use &ltth&gt instead of &lttd&gt for the first row which will automatically format the first row into a header. To add in a hyperlink " +
                 "for w3schools, I decided to hyperlink a picture of the w3schools logo in the footer. To do this, I used an anchor tag with the link in ‘href’, i.e. &lta href=“##”&gt, followed by the image before " +
                 "the ‘a’ tag was closed off. I then created an external css file, meaning that I could format the elements created, changing the font, size, colour and position. to format the colour in CSS, we " +
                 "simply use ‘colour: ##;’ followed by the colour in hexadecimal or predetermined colours. To change the size of something, for example, my jumbotron, we can use ‘height: ##;’ and ‘width: ##;’ " +
                 "which allows us to specify the exact width and height in pixels, percentages, em or rem. The different sizing options will suit whether or not you prefer a fixed or fluid layout. The table and " +
-                "introduction paragraph we now want to be fluid layout. We do this by changing their size properties to percentages, and setting position to absolute." + "</p><p>" + "Two audio files, one .mp3 and the other .ogg, " +
+                "introduction paragraph we now want to be fluid layout. We do this by changing their size properties to percentages, and setting position to absolute." + "</p><p class='logEdit'>" + "Two audio files, one .mp3 and the other .ogg, " +
                 "were created by taking my audio recording and converting them into both audio formats on www.media.io. The next stage is to insert the audio and controls by using &ltaudio controls&gt, which will " +
                 "display a default media player. The final element inserted was an API, more specifically a local web storage. I did this by creating a script, then using an if statement to determine if the computer " +
                 "is capable of storing data. If so, I used localStorage.setItem to set the user, title, date and content of the log. Once they are stored, we need to retrieve them and display it to the screen. To " +

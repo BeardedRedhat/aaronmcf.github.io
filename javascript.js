@@ -90,7 +90,7 @@ function editLog()
 
     do
     {
-        var password = prompt("Please enter password to edit logs:");
+        var password = prompt("Please enter password to edit logs:" );
         if(password == null)
         {
             return;
@@ -99,7 +99,7 @@ function editLog()
         {
             if (passwordCheck == password)
             {
-                alert("Success! Click on any paragraph");
+                alert("Click on any log to edit");
                 var edit = document.getElementsByClassName("logEdit");
                 for(var x= 0; x<edit.length; x++)
                 {
@@ -109,11 +109,12 @@ function editLog()
             else
             {
                 attempt--;
-                alert("Incorrect password. You have " + attempt + " attempts left.");
+                alert("Incorrect password. You have " + attempt + " attempts left");
 
                 if (attempt == 0)
                 {
-                    window.location.href = "index.html";
+                    document.getElementById("editLogBtn").disabled = true;
+                    return;
                 }
             }
         }
