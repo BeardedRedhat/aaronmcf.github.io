@@ -11,15 +11,30 @@ function log(name, entryDate, content)      //object
 }//function log()
 
 
+function hasTags(content)
+{
+    if(content.search('<') >= 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+
 function checkContent(content)              //checking if content is present in text area
 {
     return Boolean(content);
 }//function checkContent()
 
 
+
 function createLog()
 {
-    var passwordCheck = "placementlogs123";
+    var passwordCheck = "placementlogs";
     var attempt = 3;
 
     do
@@ -77,7 +92,7 @@ function createLog()
             }
         }
 
-    }while(attempt !== 0);
+    }while(passwordCheck !== password);
 
 }//function createLog
 
@@ -113,7 +128,7 @@ function editLog()
 
                 if (attempt == 0)
                 {
-                    document.getElementById("editLogBtn").disabled = true;
+                    document.getElementById("editLogBtn").style.visibility = "hidden";
                     return;
                 }
             }
