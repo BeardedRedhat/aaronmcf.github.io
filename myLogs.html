@@ -58,8 +58,12 @@
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" onclick="editLog()" data-toggle="tooltip" data-placement="bottom" title="Edit Logs"><i class="material-icons">text_fields</i></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#"></a>
                 </li>
+
                 <!--<li class="nav-item">
                     <a class="nav-link navIcon" href="signUp.html"><i class="material-icons">person_add</i></a>
                 </li>
@@ -177,6 +181,8 @@
     </div>
 
 
+
+    <a NAME="log1"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html" >
@@ -184,16 +190,17 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log1"></a>
+
             <h4 class="media-heading">Intro to HTML, CSS, Audio files and Local Web Storage</h4>
             <p><i>Thursday 8th September 2016</i></p>
-            <p><div id="result"></div></p>
+            <p><div id="result" class="logEdit"></div></p>
         </div>
     </div>
     <hr />
 
 
 
+    <a NAME="log2"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html">
@@ -201,16 +208,15 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log2"></a>
             <h4 class="media-heading">HTML and CSS 2 - Styling and Transitions</h4>
             <p><i>Tuesday 13th September 2016 </i></p>
-            <p>The task this week consisted of applying CSS styles and transitions to the project website. The first part we did was applying a CSS font to
+            <p class="logEdit">The task this week consisted of applying CSS styles and transitions to the project website. The first part we did was applying a CSS font to
                 the body by using ‘font-family: ##;’, as well as using google fonts to include a wider range of fonts. I then moved onto putting a few text
                 effects, such as bold or italic. I wanted to make the text in a row appear bold when hovered over, so in css I used ‘font-weight: 500;’ in a
                 class ‘.table-striped tr:hover’. In font-weight you can just type bold, but if you want specific weight to it, you can choose from 100-900.
                 The next part was to add a background colour to an element. I decided to change the background colour of the navbar simply by using the
                 ‘background-color: ##;’ attribute, along with the colour in hexidecimal format.</p>
-            <p>To add a border onto an HTML element, we use ‘border-style: ##;’ and use preferences like dashed or solid, go give your border a specific look.
+            <p class="logEdit">To add a border onto an HTML element, we use ‘border-style: ##;’ and use preferences like dashed or solid, go give your border a specific look.
                 I then added rounded corners onto the border using ‘border-radius: #px;’ attribute, which will take the number value and apply it as a radius on
                 each corner so the higher the number, the more round it will become. I applied this to a line of text at the bottom of my feedback page to give it
                 a more emphatic effect. On the home page, I have an ISArc logo displayed in the center. I then put a hover property on it, meaning that when a mouse
@@ -227,6 +233,7 @@
 
 
 
+    <a NAME="log3"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html">
@@ -234,10 +241,9 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log3"></a>
             <h4 class="media-heading">HTML and GUIs</h4>
             <p><i>Wednesday 14th September 2016 </i></p>
-            <p>Today, we were introduced to using a GUI editor, using the W3 validator and creating a
+            <p class="logEdit">Today, we were introduced to using a GUI editor, using the W3 validator and creating a
                 repository in GitHub. For the GUI editor we used BlueGriffon, which allowed us to format text and other elements without writing
                 the code. We also practiced inserting HTML tables using the editor, for example, using it for a footer, and changing the tables fill,
                 size etc. We were then introduced to the W3 validator website, which allows you to input your source code of your website and it will
@@ -251,6 +257,7 @@
 
 
 
+    <a NAME="log4"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html">
@@ -258,22 +265,21 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log4"></a>
             <h4 class="media-heading">Internet Architecture</h4>
             <p><i>Tuesday 20th September 2016 </i></p>
-            <p>This unit is based around the Internet architecture and the various types of networks, bandwidths,
+            <p class="logEdit">This unit is based around the Internet architecture and the various types of networks, bandwidths,
                 protocols etc. that is needed to connect a client to the internet. A client server network is designed to allow the client access to
                 resources from a central computer, i.e a server. The main purpose of this is that it acts as a hub for a number of less powerful computers.
                 The hardware and software that a client needs to successfully connect to the internet is a PC or a device connected to a network card or modem,
                 which will be connected to a router that sends and receives the data packets, and a suitable browser on the device so that it can interpret the
                 data using protocols and display it to the screen.</p>
-            <p>The data is transmitted from the client to the server can vary in speed, in both upload and download times. This is relative to the bandwidth,
+            <p class="logEdit">The data is transmitted from the client to the server can vary in speed, in both upload and download times. This is relative to the bandwidth,
                 which is the amount of data that can be transmitted at any given time (usually measured per second). The three types of bandwidth that we looked
                 at was PSTN, ISDN and DSL. PSTN or Public Switched Telephone Network is basically the world’s circuit-switched telephone networks, sometimes referred
                 to as the Plain Old Telephone Service (POTS). ISDN or Integrated Services Digital Network is used for sending voice, video and data over digital or normal
                 telephone lines, which supports transfer rates of around 64 Kbps/s. DSL or Digital Subscriber Line was created to allow high bandwidth transfer rates across
                 all homes and businesses using just normal telephone lines. The speed can range anywhere from 256kbit/s to over 100Mbit/s.</p>
-            <p>When data is transferred from server to the client, it will be just raw data which would be meaningless without protocols. There are various different types
+            <p class="logEdit">When data is transferred from server to the client, it will be just raw data which would be meaningless without protocols. There are various different types
                 of Protocol, such as TCP/IP, HTTP, SMTP or POP3, which are made up of rules so that computers can interpret and read data. Transmission Control Protocol (TCP)
                 is the process of breaking up information that has been sent into smaller pieces, called data packets. These packets are then sent and put back together in the
                 correct order. Internet Protocol (IP) is linked with TCP as it is the final stage in taking the data packets and directing them to the required destination, using
@@ -281,28 +287,28 @@
                 Web. It is the process of using TCP/IP to transfer HTML, so that when a URL is entered into a browser, it will fetch and display the webpage. Simple Mail Transfer
                 Protocol (SMTP) and Post Office Protocol version 3 (POP3) are used for the sending and receiving of electronic mail. SMTP is used mainly in the sending of emails,
                 whereas POP3 is used along side to receive emails, as SMTP has a limited ability to queue incoming messages. </p>
-            <p>There is a process of how the internet works, and how we receive data transmissions. It begins with a PC or device that is linked to a router. If, for example,
+            <p class="logEdit">There is a process of how the internet works, and how we receive data transmissions. It begins with a PC or device that is linked to a router. If, for example,
                 the client enters a URL into a browser, it will send a request to the closest Point of Presence, which is run by your Internet service provider. It will then send
                 back the necessary data back to the router/modem. If, however, you require information from another country or ISP, it will then find the closest Internet Exchange
                 Point (IXP), which will cover several thousand POP’s. It is then sent back to the POP, then back to the client. This process can result in longer loading times, but
                 in reality, is a very efficient way of networks to exchange information, as well as reducing costs.</p>
-            <p>When a user has entered a domain to take them to a website, the IP address needs to be located. This is where Domain Name Systems (DNS) comes into play as it acts
+            <p class="logEdit">When a user has entered a domain to take them to a website, the IP address needs to be located. This is where Domain Name Systems (DNS) comes into play as it acts
                 as an address book for IP’s, making it an essential component of the internet. The way that an IP address will be located is by the naming structure, i.e, the prefix
                 (http) tells us that we want to use the Hypertext transfer protocol and that we are communicating with the World Wide web. The subdomain (www.) also tells us that we
                 are searching the WWW. The domain name is the next part (example.com), which is the website unique identifier, as no two websites will have the same domain. The last
                 part of the domain name (.com) is called the extension, which tells us what type of website is being run, e.g. .com, .org and .net are all top level domain names with
                 unrestricted open domains, whereas .co.uk or .org.uk are secondary level domains (.uk being the secondary level) with open access.</p>
-            <p>For companies that want to have multiple websites under the same server, there is shared domains, allowing a more economical approach to hosting multiple websites. Shared
+            <p class="logEdit">For companies that want to have multiple websites under the same server, there is shared domains, allowing a more economical approach to hosting multiple websites. Shared
                 domains will use a different subdomain with the original domain, for example, Google will have www.google.com, maps.google.com, mail.google.com etc. for each of their
                 different sites. </p>
-            <p>The rate in which technology is developing and growing into our day-to-day lives is quite rapid compared to 15 years ago. Due to its importance, we would be almost lost
+            <p class="logEdit">The rate in which technology is developing and growing into our day-to-day lives is quite rapid compared to 15 years ago. Due to its importance, we would be almost lost
                 without it. A more recent development in remote servers is the cloud, which basically allows users/businesses to store, manage and process data onto external servers
                 rather than locally, meaning that we can access it anywhere (as long as theres an internet connection). Cloud computing has proved to be beneficial in providing better
                 disaster recovery, increased collaboration between users and more environmentally friendly. However, cloud computing does have particular drawbacks, with the main one
                 being that internet access is always required to retrieve from the cloud, meaning that if the internet went down, no-one can access their files. Another major issue is
                 security, as if it is a shared cloud in a businesses for example, it could be easy for the wrong person to get access, or malicious software attacks would be targeted
                 more toward the cloud. </p>
-            <p>Really Simple Syndication or RSS is a technology that allows you to keep track of updates on websites using a standardised XML format, then shown in an aggregator (reader).
+            <p class="logEdit">Really Simple Syndication or RSS is a technology that allows you to keep track of updates on websites using a standardised XML format, then shown in an aggregator (reader).
                 RSS feeds allows you to have complete control over what you receive without even entering an email address, meaning no spam, viruses, phishing etc. However, Atom, which is
                 an alternative to RSS was created to address some of the flaws it had, such as differentiating between relative and non-relative URL’s, providing each entry with a globally
                 unique ID, and creating “autodiscovery”, which allows feed aggregators to automatically detect if there is a feed.</p>
@@ -312,6 +318,7 @@
 
 
 
+    <a NAME="log5"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html">
@@ -319,27 +326,26 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log5"></a>
             <h4 class="media-heading">Internet Communication</h4>
             <p><i>Wednesday 21st September 2016 </i></p>
-            <p>Currently, there is very little legislation that surrounds internet communication. The Malicious Communications Act 1988 was the first
+            <p class="logEdit">Currently, there is very little legislation that surrounds internet communication. The Malicious Communications Act 1988 was the first
                 Act that was passed for the internet, which states that it is an offence to send a communication with the intention of distress or anxiety. However, this law was passed
                 before the introduction of any kind of social media like Facebook or Twitter, or before the vast growth in the technological age. This means that it has to be interpreted to
                 include tweets or text messages etc. or to apply to any modern day communication. Ethical conduct online has surpassed our legislation, in that most people will know what is
                 appropriate/inappropriate communication, but it has no legal backing.</p>
-            <p>For employees in a distributed workplace will need various different ways to communicate efficiently, depending on the situation. Common technologies that are used for this
+            <p class="logEdit">For employees in a distributed workplace will need various different ways to communicate efficiently, depending on the situation. Common technologies that are used for this
                 include Voice over IP (VoIP), which will connect a landline number to a mobile using the internet. VoIP tends to be useful for employees who tend to travel, but can just link
                 their office phone to their mobile to avoid numerous calls. For people who don’t use VoIP, some use conversation voice to text, which will take an incoming message, converts
                 it into text then sends it over via text message to the recipient. Presencing, which allows a server to locate where you are at all times by logging onto the internet, can be
                 useful for employers to see how long the travel time is, or to keep track of meetings. One of the most common forms of communication for distributed workplaces is mobile
                 technology, as it vastly opens up accessibility as you can use it almost anywhere. This proves most useful when employees are in some downtime, for example, waiting in the
                 airport, or if they are somewhere without access to computers, meaning productivity will increase.</p>
-            <p>Social Media, which is tech largest, most popular form of communication for businesses and the general public, has stormed and forever changed the way we market, shop, socialise
+            <p class="logEdit">Social Media, which is tech largest, most popular form of communication for businesses and the general public, has stormed and forever changed the way we market, shop, socialise
                 or promote. However, as there are many different forms of social media which will have their own format for content and marketing. For example, Facebook, being the market leader
                 with over 1.7 billion users worldwide, is popular for promoting almost every kind of business, accompanied with photos/videos or prize draws. Twitter on the other hand, is used
                 for short, concise messages or LinkedIn acts as an online CV to help people develop their professional careers ad create useful links to employers. Other forms of social media
                 include Pinterest, Youtube, Instagram, Snapchat, WhatsApp or Reddit. Each of these all have different formats, each having their own individual strengths and target markets.</p>
-            <p>Web 2.0 refers to the new generation of how we use and design websites, moving from static web pages to dynamic or user-generated content, allowing for the incorporation of social
+            <p class="logEdit">Web 2.0 refers to the new generation of how we use and design websites, moving from static web pages to dynamic or user-generated content, allowing for the incorporation of social
                 networking sites, blogs, wikis, folksonomies or video sharing. Rich internet applications or RIA was a major breakthrough in internet design, aiming to deliver the same visual
                 aspects and characteristics of desktop application sofware with the introduction of CSS transitions, JavaScript and browser plug-ins. Another major step in Web 2.0 is the Social
                 Web, allowing individual to create their own unique profiles and to have their information to be shared publicly or privately. Mashups, which is an integration of two or more
@@ -355,6 +361,7 @@
 
 
 
+    <a NAME="log6"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html">
@@ -362,24 +369,23 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log6"></a>
             <h4 class="media-heading">Network Maintenance & Issues</h4>
             <p><i>Tuesday 27th September 2016 </i></p>
-            <p>As we are living through a rapidly growing technological age, we have become reliant, and keep a significant amount of sensitive information
+            <p class="logEdit">As we are living through a rapidly growing technological age, we have become reliant, and keep a significant amount of sensitive information
                 digitally. This has directly affected the amount of software attacks from people who are trying to gain access to this information, or delete files from a server. This is why we must
                 protect ourselves against such attacks. Simple ways to help prevent against attacks to your PC or server include keeping your PC’s and antivirus up to date, staying aware of network
                 speed and connectivity, as if it drops or becomes slow it can be due to an attack. For servers, any network ports that aren’t being used should be closed. If an attack were to happen,
                 the first step would be to work out what type of attack, and where its coming from (IP address). If the attack was internal, any devices/PC’s the are affected by the attack should be
                 disconnected, or if it came from outside the network, the IP address should be blocked. Any information/files that are sensitive should be backed up immediately, along with the logs of
                 how the attack happened so it can be prevented against in future. The final step would be to completely reinstall the OS on the affected computers, ensuring that the malware is gone.</p>
-            <p>However, cyberattacks aren’t the only way that data can be compromised. Another form of attack is social engineering which refers to people purposely tricking someone into giving them
+            <p class="logEdit">However, cyberattacks aren’t the only way that data can be compromised. Another form of attack is social engineering which refers to people purposely tricking someone into giving them
                 sensitive personal details that aren’t available for public viewing. For example, if you were contacted by phone, with someone confirming a few public details (such as name, address etc.)
                 to reel you in, then asking you to confirm a few private details. This form of social engineering is still common, but also exists in fake emails or phishing websites. To help prevent
                 against this, you should always ask the unknown person to confirm who they are and where they’re calling from. Another common form of social engineering is phishing sites, which usually
                 come in the form of an email sent from what appears to be a legitimate business, asking you to provide verification that would then redirect you to a duplicate website to enter your details.
                 It can be more difficult to identify phishing sites, so checking your anti-virus software or security logs for any unsolicited activity, or if you are unsure of the legitimacy of the
                 call/site, its always useful to research into it.</p>
-            <p>To further protect your data, encryption will often be used. The way encryption works is by using an algorithm to cypher the data, so that if someone were to gain access, it would be
+            <p class="logEdit">To further protect your data, encryption will often be used. The way encryption works is by using an algorithm to cypher the data, so that if someone were to gain access, it would be
                 meaningless without an encryption key (used to decipher the encryption). There are two main types of encryption: Symmetric and Asymmetric. Symmetric encryption involves just one key,
                 used for both cyphering and deciphering, which poses a security issue, as if someone were to intercept and gain the key, they decrypt the data. This is where Asymmetric encryption has the
                 advantage, as there is a public and a private key in that one key will encrypt the information, whereas the other will decrypt and vice versa. So if the same situation were to occur and
@@ -390,13 +396,13 @@
                 send the information to the Validation Authority (VA). The purpose of the VA is so that a website can send them the public key (sent by the entity) to confirm their authenticity. However, with
                 having a chain of trust in PKI, there is a liability in that if there was any security issue or if the CA was compromised, the whole PKI is at risk. This happened in 2011, where any
                 certificates given out by Dutch CA DigiNotar were forced to blacklist after there was a number of fake certificates discovered.</p>
-            <p>Most large companies that are involved with IT and modern technologies will provide their employees with company devices, such as computers or phones, so that they can be easily monitored and
+            <p class="logEdit">Most large companies that are involved with IT and modern technologies will provide their employees with company devices, such as computers or phones, so that they can be easily monitored and
                 controlled. However, some companies will implement a Bring your own device (BYOD) policy, which allows employees to bring their own devices to work, and are permitted to use them for company
                 information and applications. The policy both benefits the company and the employee, as it would save a great deal of costs for the company, but also gives employees better enjoyment of using
                 their own personal device. There are requirements for BYOD, as working with privileged information can be risky with an unknown device. The first requirement is a software application that can
                 manage all the devices on the network, but also ensuring that no device is being misused or unsecured. This is where the second requirement comes in, which is a written policy for both, the
                 employer and employee, outlining their responsibilities, safety and misuse. They will be required to then sign an agreement stating that they have read and understood the policy.</p>
-            <p>For companies that will have several devices on a network, it can become difficult in making sure that they are all up-to-date and running the same settings. MDM or Mobile Device Management
+            <p class="logEdit">For companies that will have several devices on a network, it can become difficult in making sure that they are all up-to-date and running the same settings. MDM or Mobile Device Management
                 refers to managing and configuring multiple devices across a network, for example, Apple Configurator, which easily allows you to prepare, deploy and supervise iOS devices. MDM proves to be
                 useful for monitoring a device’s life cycle, ensuring that the devices are getting full, efficient use. The life cycle consists of five main stages: Provisioning, Using, Maintaining,
                 Monitoring and Decommissioning. The provisioning stage of the life cycle refers to setting up the device with software, access requirements and networks. The next stage is Using, which is
@@ -404,34 +410,34 @@
                 which comes under the Maintaining stage. The Monitoring stage refers to the MDM taking usage data, such as when its used or what its used for, or, for example, in a company that would have
                 delivery systems, the devices could be used for GPS to keep track of where they are or the duration of the journey. And finally, decommissioning, so when the devices are at the end of their
                 life cycle, i.e. become outdated or obsolete, they will be wiped and taken apart/recycled.</p>
-            <p>In more recent years, cloud-based services are being used more and more throughout our homes and in businesses. it offers many benefits as opposed to locally storing your data, and provides an
+            <p class="logEdit">In more recent years, cloud-based services are being used more and more throughout our homes and in businesses. it offers many benefits as opposed to locally storing your data, and provides an
                 almost untouchable back if any of the local computers/servers were damaged. However, this service does pose security threats. As cloud servers hold a vast amount of sensitive data, such as financial
                 info, intellectual property, trade secrets etc. they effectively become a prime target for hackers. This consequently leads onto another threat of permanent data loss, as malicious hackers have been
                 known to hack into cloud data centres and permanently delete data to harm businesses or even as extreme as economic damage. DOS or denial-of-service attacks can often occur against cloud services,
                 which basically means that they are overloading the processing power, ultimately crashing the system. However, some of these attacks can often come from inside the cloud service, i.e. a former
                 employee, system administrator or business partner that would target their former workplace as revenge or just having a malicious agenda. There are many other security threats against cloud-based
                 services, such as account hijacking, hacked API’s or system vulnerabilities bu</p>
-            <p>In the unlikely event of a natural disaster, or if the cloud has been hacked, there would need to be a recovery plan to ensure that the data is protected and that it is still available to the public.
+            <p class="logEdit">In the unlikely event of a natural disaster, or if the cloud has been hacked, there would need to be a recovery plan to ensure that the data is protected and that it is still available to the public.
                 There are online web services that can monitor and alert you of any downtime, i.e it will ping every 5 seconds (or any given amount of time) to ensure that the cloud is still up and running, so if it
                 goes down, it will send a notification to the user. As the cloud is reliant upon an internet connection, problems and panic will occur if the connection goes down. This is where a backup connection
                 can become useful to switch to, or a redundant connection that will kick in if another fails. If the cloud service was to completely shut down in the event of a natural disaster, it is always useful
                 to have an onsite backup, and to periodically create the backups to ensure that minimal data is lost. Many would argue that this defeats the purpose of the cloud, but it is a safe option to have onsite
                 backups. Companies like Amazon Web Services (AWS) use zones in the case of a natural disaster, in that if, for example, an earthquake occurs and a zone goes down, it will switch to one of their other
                 zones to ensure that users can still access their information.</p>
-            <p>Continuous Data Protection or CDP would be a necessity amongst businesses, but depending on the business will depict the best technique to use. For any non-critical data within a network, these can be
+            <p class="logEdit">Continuous Data Protection or CDP would be a necessity amongst businesses, but depending on the business will depict the best technique to use. For any non-critical data within a network, these can be
                 backed up daily, or every few days. If the non critical data were to be backed up continuously with the critical data, it would result in inefficient waste of processing power. For more critical data,
                 they can be backed up continuously, or even transactionally, i.e. anytime a file is changed, it will be immediately updated or if a file is deleted, it can be recovered straight away from the previous
                 backup. This type of backup can be useful when it comes to transactions or for dropbox where files are exchanged.</p>
-            <p>Most of us have probably experienced the frustration of a lost internet connection, especially when we cannot seem to fix it. If so, there are a few steps you can take to work out exactly where the problem
+            <p class="logEdit">Most of us have probably experienced the frustration of a lost internet connection, especially when we cannot seem to fix it. If so, there are a few steps you can take to work out exactly where the problem
                 lies. The first setting that should be checked is to see if TCP/IP is enabled (settings > network > advanced > TCP/IP). If so, you should then check if an IP address has been assigned to the computer which
                 should be under the TCP/IP settings. Below the IP address, the router should be checked, in that if there is no IP address under the router, this means that the computer cannot ping the router. In the same
                 settings menu, you should check if the computer can contact a DHCP service under ‘Configure IPv4’. If everything there is operational, using terminal you can check if the computer can perform a DNS lookup
                 using ‘dig example.com’. However, sometimes the problem is beyond our control, as it could be server-side rather than client-side. Server-side basically means that the problem doesn’t lie with your computer,
                 but with the server you’re trying to interact with. This can be identifiable usually by an error message from the server/browser, or if you can access other services on the same device. If the issue is
                 client-side, the easiest way to check is to try access the service under another device or computer, so if it is accessible on other devices, the computer contains the problem.</p>
-            <p>Keeping your PC clean and not having any excess files/programs can dramatically affect performance (depending on how much), lifespan and reduces the risk of any computer system failures. Simple ways to maintain
+            <p class="logEdit">Keeping your PC clean and not having any excess files/programs can dramatically affect performance (depending on how much), lifespan and reduces the risk of any computer system failures. Simple ways to maintain
                 your computer include performing a disk cleanup and defragmentation, removing any temporary and cached files, cleaning dust from the fan and keeping all the system and security software up to date.</p>
-            <p>The motherboard of a computer is used for connecting many of the crucial electronic components, such as the CPU or memory, and is printed on a PCB. Storage devices are used to store all the data within a device
+            <p class="logEdit">The motherboard of a computer is used for connecting many of the crucial electronic components, such as the CPU or memory, and is printed on a PCB. Storage devices are used to store all the data within a device
                 and an optical disc, such as CD’s or DVD’s are used for storing, installing and backing up data on your computer.</p>
         </div>
     </div>
@@ -439,6 +445,7 @@
 
 
 
+    <a NAME="log7"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html">
@@ -446,46 +453,45 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log7"></a>
             <h4 class="media-heading">Principles of Internet Security</h4>
             <p><i>Wednesday 28th September 2016 </i></p>
-            <p>There are three major types of encryption, that many people will have probably seen before using Wi-Fi, which are Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA) and Wi-Fi Protected Access 2
+            <p class="logEdit">There are three major types of encryption, that many people will have probably seen before using Wi-Fi, which are Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA) and Wi-Fi Protected Access 2
                 (WPA2). WEP was one of the first types of security algorithms introduced to 802.11 standard, using a 64-bit key which would be entered as a string of 10 hexadecimal characters, or a 128-bit key for a
                 string of 26 hexadecimal characters. WEP in modern day age would be a less secure option as opposed newer, more complex algorithms. WPA was the replacement for WEP, which generates a new 128-bit key for
                 each data packet, meaning that it prevents against the type of attacks that WEP was susceptible to. Following on from WPA was WPA2 (802.11i standard), which provides much more secure data protection by
                 implementing FIPS 140-2 AES encryption algorithm, providing government grade security.</p>
-            <p>Web security is probably the most vital aspect to modern technology, as there is always going to me malicious attackers, whose aim is to steal or destroy sensitive data. Different forms of web security exist,
+            <p class="logEdit">Web security is probably the most vital aspect to modern technology, as there is always going to me malicious attackers, whose aim is to steal or destroy sensitive data. Different forms of web security exist,
                 each making it a bit safer from such attackers. Authentication, which is the process of determining if someone/something is what they claim, thus providing access if authenticated. It gives better control
                 over the users in a system and provides an extra layer of protection. Digital certificates, issued from the Registration Authority (RA), is basically an electronic ID for a person, computer or organisation
                 using the public key infrastructure (PKI). Encryption, being one of the original forms of web security, is the translation of data into a secret code, but only being able to read the code with an encryption
                 key. The two main types of encryption is symmetric and asymmetric or public key encryption. A Firewall is a network security system that monitors incoming and outgoing traffic based on predetermined security
                 rules, thus stopping illegitimate access from the web.</p>
-            <p>Encryption helps enforce three main premises of security: confidentiality, integrity and non-repudiation. With confidentiality, it keeps prying eyes off sensitive data by using encryption keys, meaning that
+            <p class="logEdit">Encryption helps enforce three main premises of security: confidentiality, integrity and non-repudiation. With confidentiality, it keeps prying eyes off sensitive data by using encryption keys, meaning that
                 only the intended recipient will be able to decrypt. For example, there is only two people in the world that know the recipe for coco-cola, meaning that it is highly confidential. This is the same premise as
                 encryption in that only the intended people should have access to it. Integrity refers to making sure that the data sent is complete and untampered with by using a hash that corresponds to the data being sent.
                 In effect, if the data was changed it would not decrypt properly. Non-repudiation, which is the assurance that someone cannot deny the authenticity of their signature or a message that was sent, is enforced
                 with encryption as it corresponds the encryption key to the sender using the senders information.</p>
-            <p>A computer virus, much like a biological virus, is designed to infect and replicate to prevent you from functioning normally. They are made to infect your computer programs and files, replicating and spreading
+            <p class="logEdit">A computer virus, much like a biological virus, is designed to infect and replicate to prevent you from functioning normally. They are made to infect your computer programs and files, replicating and spreading
                 to alter how your PC operates or completely corrupting the system. Viruses are most danerous when they are aimed at stealing or destroying sensitive data. Simple ways to help protect against a computer virus
                 include keeping your OS and other anti-virus software up-to-date, preforming daily scans, being cautious of email links and attachments (always scan for viruses no matter the source), using firewalls and strong
                 passwords. There many other ways to help prevent against viruses and should all be taken seriously, as most viruses aren’t noticeable. Viruses can also infect our computers through no fault of our own, i.e if
                 there is a bug or a loophole in the program/OS software. Once they are discovered by the developer or users, they will then usually then fix the problem and release an update with the necessary patches so that
                 the problems will not reoccur.</p>
-            <p>As mentioned before, unidentified links or attachments in emails is a common way for a virus to make its ay into your computer, which is why a few simple steps need to be followed to ensure you’re not infected.
+            <p class="logEdit">As mentioned before, unidentified links or attachments in emails is a common way for a virus to make its ay into your computer, which is why a few simple steps need to be followed to ensure you’re not infected.
                 Even if someone you know personally or trust sends you an email, there could still be viruses attached unknowingly from the sender. The first thing that you should do is to scan the attachment using anti-virus
                 software; it will suss out if it is infected. You should also confirm with the sender if they actually sent an attachment, so if the source is not identified the email and attachment should be deleted. After any
                 encounter with untrusted emails or attachments, a virus scan should be run to make sure that no virus has infected your computer.</p>
-            <p>If a malicious attack is suspected against your computer, there are a few steps to follow to prevent against data loss/compromise, and to successfully flush it out. If any sign of an attack is apparent, the computer
+            <p class="logEdit">If a malicious attack is suspected against your computer, there are a few steps to follow to prevent against data loss/compromise, and to successfully flush it out. If any sign of an attack is apparent, the computer
                 must be disconnected from the internet and local network so it will avoid any other devices being infected. Anti-virus/malware software must then be run to locate if anything has been affected and then removed.
                 Infected files should then be removed, with any other uninfected data backed up in case the attack reoccurs. Any other devices sharing the same network should then go through the same process to ensure that they
                 haven’t been compromised.</p>
-            <p>For many people/businesses, there is a significant amount of sensitive or valuable information stored, meaning that every security precaution should be taken. Some precautions include: enabling a Firewall will
+            <p class="logEdit">For many people/businesses, there is a significant amount of sensitive or valuable information stored, meaning that every security precaution should be taken. Some precautions include: enabling a Firewall will
                 control what information flows between your computer and the internet, installing anti-virus and anti-malware software, removing any unnecessary software as intruders tend to attack software vulnerabilities, install
                 intrusion detection software, enabling auto timeout so that accounts will be locked, and most simply, using strong passwords on everything, i.e. include a mix of lower and upper case letters, symbols, numbers etc.</p>
-            <p>A computer virus is defined as a piece of code written to alter/damage files or your computers operation without the users permission or knowledge. Viruses will commonly come attached to something, or in the path of
+            <p class="logEdit">A computer virus is defined as a piece of code written to alter/damage files or your computers operation without the users permission or knowledge. Viruses will commonly come attached to something, or in the path of
                 execution of another program. A worm, however, is different from a virus in that they will replicate themselves without a host file, and even though they generally come inside a document, it will travel from computer
                 to computer.</p>
-            <p>Spyware is a type of malware that installs into your computer without any knowledge of the user. The reason anti-malware software is needed is that spyware is generally undetectable but dangerous. Its aim is to collect
+            <p class="logEdit">Spyware is a type of malware that installs into your computer without any knowledge of the user. The reason anti-malware software is needed is that spyware is generally undetectable but dangerous. Its aim is to collect
                 the users personal information, like key logging, passwords or other sensitive data,  but can also install additional software and take control over a computer without the users knowledge. </p>
         </div>
     </div>
@@ -493,6 +499,7 @@
 
 
 
+    <a NAME="log8"></a>
     <div class="media">
         <div class="media-left">
             <a href="myProfile.html" >
@@ -500,10 +507,9 @@
             </a>
         </div>
         <div class="media-body">
-            <a NAME="log8"></a>
             <h4 class="media-heading">Javascript 1<div id="output1"></div></h4>
             <p><i>Tuesday 5th October 2016<div id="output2"></div></i></p>
-            <p>This week we began learning javascript to provide some functionality to our websites. But before that, we had a bit of a background look on the language and how it works. Javascript is an object-orientated language
+            <p class="logEdit">This week we began learning javascript to provide some functionality to our websites. But before that, we had a bit of a background look on the language and how it works. Javascript is an object-orientated language
                 meaning that it defines, not only the data type of a data structure, but the types of functions that can be applied. An object is basically a collection of properties that make it unique, for example, a car would
                 be the object, with the car name, model, weight, colour etc. being the properties which will differ from car to car. In a program, each property will be assigned with a corresponding method, which will be the same
                 but performed at different times. In my website, the object would be a log, with the properties being the name, title, date and content. Since the introduction of javascript in 1997, there has been many updates and
@@ -563,7 +569,6 @@
             <div class="col-md-3 offset-md-1">
                 <h5 class="title">ABOUT ME</h5>
                 <p>I am currently a student at Ulster University undergoing placement year at ISArc.</p>
-                <!--<p>This website was created as part of a project for a Level 3 RQF in Web Design and Development using Material Design, Bootstrap, HTML5, CSS3, JavaScript, jQuery and PHP. </p>-->
                 <p>This website was created as part of a project for a Level 3 RQF in Web Design and Development. Its main purpose is to show what knowledge and skills I have acquired over the course, and to contain a functioning create and view logs page using Javascript, jQuery and PHP.</p>
                 <br>
                 <div>

@@ -8,13 +8,13 @@ function log(name, entryDate, content)      //object
     this.logName = name;                    //properties
     this.logContent = content;
     this.logEntryDate = entryDate;
-}
+}//function log()
 
 
 function checkContent(content)              //checking if content is present in text area
 {
     return Boolean(content);
-}
+}//function checkContent()
 
 
 function createLog()
@@ -83,6 +83,47 @@ function createLog()
 
 
 
+function editLog()
+{
+    var passwordCheck = "editlogs";
+    var attempt = 3;
+
+    do
+    {
+        var password = prompt("Please enter password to edit logs:");
+        if(password == null)
+        {
+            return;
+        }
+        else
+        {
+            if (passwordCheck == password)
+            {
+                alert("Success! Click on any paragraph");
+                var edit = document.getElementsByClassName("logEdit");
+                for(var x= 0; x<edit.length; x++)
+                {
+                    edit[x].contentEditable = true;
+                }
+            }
+            else
+            {
+                attempt--;
+                alert("Incorrect password. You have " + attempt + " attempts left.");
+
+                if (attempt == 0)
+                {
+                    window.location.href = "index.html";
+                }
+            }
+        }
+
+    }while(passwordCheck !== password);
+
+}//function editLog()
+
+
+
 
 //***************** scroll to top button in my logs page **********************//
 jQuery(document).ready(function($)
@@ -109,5 +150,5 @@ jQuery(document).ready(function($)
                 scrollTop: 0 ,
             }, scroll_top_duration
         );
-    });fd
+    });
 });
