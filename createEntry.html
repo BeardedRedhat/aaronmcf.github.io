@@ -99,57 +99,62 @@
     <div class="full-bg-img flex">
         <div class="center" align="center">
             <ul>
-                <li>
-                    <div class="container create">
-                        <h2><span class="createTitle animated fadeIn">Create Log Entry</span></h2>
-                        <br><br>
-                    </div>
-                </li>
-                <li>
-                    <div class="container create">
-                        <div class="md-form col-sm-4 offset-sm-2">
-                            <input placeholder="Enter first and last name" type="text" id="fullName" class="form-control animated fadeIn">
+                <form action="create.php" method="post">
+                    <li>
+                        <div class="container create">
+                            <h2><span class="createTitle animated fadeIn">Create Log Entry</span></h2>
+                            <br><br>
                         </div>
-                        <div class="md-form col-sm-4">
-                            <input placeholder="Enter Date, e.g Fri 5th Sep 2016" type="text" id="date" class="form-control animated fadeIn">
+                    </li>
+                    <li>
+                        <div class="container create">
+                            <div class="md-form col-sm-4 offset-sm-2">
+                                <input placeholder="Enter first and last name" type="text" name="fullName" id="fullName" class="form-control animated fadeIn">
+                            </div>
+                            <div class="md-form col-sm-4">
+                                <input placeholder="Enter Date, e.g Fri 5th Sep 2016" type="text" name="date" id="date" class="form-control animated fadeIn">
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <div class="md-form col-sm-8 offset-sm-2">
-                            <input placeholder="Enter Log title" type="text" id="logTitle" class="form-control animated fadeIn">
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="md-form col-sm-8 offset-sm-2">
+                                <input placeholder="Enter Log title" type="text" name="logTitle" id="logTitle" class="form-control animated fadeIn">
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <!--<li>
-                    <div class="container">
-                        <div class="md-form col-sm-6">
-                            <input placeholder="Enter Date, e.g Fri 5th Sep 2016" type="text" id="form7" class="form-control animated fadeIn">
+                    </li>
+                    <!--<li>
+                        <div class="container">
+                            <div class="md-form col-sm-6">
+                                <input placeholder="Enter Date, e.g Fri 5th Sep 2016" type="text" id="form7" class="form-control animated fadeIn">
+                            </div>
                         </div>
-                    </div>
-                </li>-->
-                <li>
-                    <div class="container">
-                        <div class="md-form col-sm-8 offset-sm-2">
-                            <textarea type="text" id="textarea" placeholder="Enter Log" class="md-textarea animated fadeIn"></textarea>
+                    </li>-->
+                    <li>
+                        <div class="container">
+                            <div class="md-form col-sm-8 offset-sm-2">
+                                <textarea type="text" name="textarea" id="textarea" placeholder="Enter Log" class="md-textarea animated fadeIn"></textarea>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <a href="#" class="btn btn-white-outline btn-md animated fadeIn" id="postEntryBtn" onclick="createLog()">Post Entry</a>
-                    </div>
-                </li>
-                <li>
-                    <div id="output1"></div>
-                    <div id="output2"></div>
-                    <div id="output3"></div>
-                </li>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <a href="#" class="btn btn-white-outline btn-md animated fadeIn" id="postEntryBtn" onclick="createLog()">Post Entry</a>
+                            <input type="submit" name="submit" value="Save Data">
+                        </div>
+                    </li>
+                    <li>
+                        <div id="output1"></div>
+                        <div id="output2"></div>
+                        <div id="output3"></div>
+                    </li>
+                </form>
             </ul>
         </div>
     </div>
 </div>
+
+<a href="data.rtf">Text File</a>
 
 <script type="text/javascript" src="javascript.js"></script>
 <script type="text/javascript">

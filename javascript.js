@@ -84,6 +84,11 @@ function createLog()
 }//function createLog
 
 
+function timeout()
+{
+    //document.getElementById("editLogBtn").style.visibility = "visible";
+}
+
 
 function editLog()
 {
@@ -92,7 +97,7 @@ function editLog()
 
     do
     {
-        var password = prompt("Password:" );
+        var password = prompt("Password:");
         if(password == null)
         {
             return;
@@ -102,20 +107,31 @@ function editLog()
             if (passwordCheck == password)
             {
                 alert("Click on any paragraph to edit");
+                document.getElementById("saveBtn").style.visibility = "visible";
                 var edit = document.getElementsByClassName("logEdit");
+
                 for(var x= 0; x<edit.length; x++)
                 {
                     edit[x].contentEditable = true;
+                    document.getElementById("editLogBtn").classList.add("active");
                 }
             }
             else
             {
                 attempt--;
-                alert("Incorrect Password. You have " + attempt + " attempts left");
 
-                if (attempt == 0)
+                if(attempt > 1)
+                {
+                    alert("Incorrect Password. Please try again.\n(" + attempt + " attempts left)");
+                }
+                else if(attempt > 0)
+                {
+                    alert("Incorrect Password. Please try again.\n(" + attempt + " attempt left)");
+                }
+                else if (attempt == 0)
                 {
                     document.getElementById("editLogBtn").style.visibility = "hidden";
+                    //window.setTimeout(timeout(), 3000);
                     return;
                 }
             }
@@ -126,6 +142,10 @@ function editLog()
 }//function editLog()
 
 
+function saveChanges()
+{
+
+}
 
 
 //***************** scroll to top button in my logs page **********************//

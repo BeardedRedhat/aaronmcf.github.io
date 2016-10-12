@@ -29,6 +29,12 @@ function checkContent(content)
 }
 
 
+log.prototype.save = function()
+{
+    localStorage.setItem(this.logName, JSON.stringify(this));
+};
+
+
 function createLog()
 {
     if(document.getElementById("textarea") == null)
@@ -53,7 +59,7 @@ function createLog()
                 var today = date.getDate();
                 var logEntry = new log(promptResp, content, date);
 
-                localStorage.setItem(promptResp, JSON.stringify(logEntry));
+                logEntry.save();
 
                 var retrieveLog = JSON.parse(localStorage.getItem(promptResp));
                 document.getElementById("output1").innerText = retrieveLog.logName;
@@ -66,6 +72,107 @@ function createLog()
             alert("Error: No content");
         }
     }
+}//function createLog
+
+
+
+function setImage(image)
+{
+    image.src='pexels-photo-90807-large.jpg';
 }
 
-//appendChild -
+
+
+function resetImage(image)
+{
+    image.src='pexels-photo-115045-large.jpg';
+}
+
+
+
+function getLogs()
+{
+    var values = [];
+    var keys = Object.keys(localStorage);
+    var i = keys.length;
+
+    //while(i--)
+    //{
+    //    if(typeof(keys[i]) !== "undefined")
+    //    {
+    //        console.log(localStorage.getItem(keys[i]));
+    //    }
+    //}//while
+
+    do
+    {
+        if(typeof(keys[i]) !== "undefined")
+        {
+            console.log(localStorage.getItem(keys[i]));
+        }
+    }while(i--);
+
+
+    for(var x=0; x<i; x++)
+    {
+        if(typeof(keys[x]) !== "undefined")
+        {
+            console.log(localStorage.getItem(keys[x]));
+        }
+    }
+
+
+    for(var x=0; x<100; x++)
+    {
+        if(x > i)
+        {
+            break;
+        }
+
+        if(typeof(keys[x]) !== "undefined")
+        {
+            console.log(localStorage.getItem(keys[x]));
+        }
+    }
+
+}//function getLogs
+
+
+
+function getURL(button)
+{
+    alert(button.id);
+    var url = window.location;
+    console.log(url);
+
+    if(url.href.includes("myProfile.html"))
+    {
+        //window.location = "login.html";
+    }
+
+    switch(button.id)
+    {
+        case /button1/:
+            console.log("This is button 1");
+            break;
+        case /button2/:
+            console.log("This is button 2");
+            break;
+    }
+}
+
+
+
+function goBack()
+{
+    window.history.back();
+}
+
+
+
+function getBrowser()
+{
+    alert(navigator.userAgent);
+}
+
+
