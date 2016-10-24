@@ -8,14 +8,14 @@
 
 $errors = '';
 $myemail = 'aaron.mcfarland@isarc.co.uk';
-if(empty($_POST['fullName'])  ||
+if(empty($_POST['fullname'])  ||
     empty($_POST['email']) ||
     empty($_POST['subject']) ||
     empty($_POST['feedback']))
 {
     $errors .= "\n Error: all fields are required";
 }
-$name = $_POST['fullName'];
+$name = $_POST['fullname'];
 $email_address = $_POST['email'];
 $subject = $_POST['subject'];
 $feedback = $_POST['feedback'];

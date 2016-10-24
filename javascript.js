@@ -142,6 +142,25 @@ function editLog()
 }//function editLog()
 
 
+function saveChanges()
+{
+    /* Save changes to contentEditable in logs.html */
+}
+
+
+function feedbackCook()
+{
+    event.preventDefault();
+    var input = document.getElementsByTagName("input");
+    var nameInput = input[0];
+    var emailInput = input[1];
+    var nameCookie = document.cookie = nameInput.value;
+    var emailCookie = document.cookie = emailInput.value;
+
+    console.log("Feedback user name: " + nameCookie);
+    console.log("Feedback user email: " + emailCookie);
+
+}
 
 
 //***** scroll to top button in my logs page *****//

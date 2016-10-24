@@ -117,8 +117,8 @@
 
     <div class="container col-sm-6 offset-sm-3">
         <div class="md-form">
-            <form name="form1" method="post" action="feedback.php">
-                <input placeholder="Full name" name="fullName" type="text" id="fullName" class="form-control">
+            <form name="form1" method="post" action="feedback.php" onsubmit="feedbackCook()">
+                <input placeholder="Full name" name="fullName" type="text" id="fullname" class="form-control">
                 <input placeholder="Email, e.g. joeblogs@email.com" name="email" type="email" id="email" class="form-control" required="required">
                 <input placeholder="Subject of your Feedback" name="subject" type="text" id="subject" class="form-control">
                 <textarea type="text" name="feedback" id="feedback" placeholder="Your Feedback" class="md-textarea animated fadeIn"></textarea>
