@@ -150,7 +150,6 @@ function saveChanges()
 
 function feedbackCook()
 {
-    event.preventDefault();
     var input = document.getElementsByTagName("input");
     var nameInput = input[0];
     var emailInput = input[1];
@@ -159,8 +158,9 @@ function feedbackCook()
 
     console.log("Feedback user name: " + nameCookie);
     console.log("Feedback user email: " + emailCookie);
-
 }
+
+
 
 
 //***** scroll to top button in my logs page *****//
