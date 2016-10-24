@@ -104,13 +104,13 @@ function getLogs()
     //    }
     //}//while
 
-    do
-    {
-        if(typeof(keys[i]) !== "undefined")
-        {
-            console.log(localStorage.getItem(keys[i]));
-        }
-    }while(i--);
+    //do
+    //{
+    //    if(typeof(keys[i]) !== "undefined")
+    //    {
+    //        console.log(localStorage.getItem(keys[i]));
+    //    }
+    //}while(i--);
 
 
     for(var x=0; x<i; x++)
@@ -122,18 +122,18 @@ function getLogs()
     }
 
 
-    for(var x=0; x<100; x++)
-    {
-        if(x > i)
-        {
-            break;
-        }
+    //for(var x=0; x<100; x++)
+    //{
+    //    if(x > i)
+    //    {
+    //        break;
+    //    }
 
-        if(typeof(keys[x]) !== "undefined")
-        {
-            console.log(localStorage.getItem(keys[x]));
-        }
-    }
+     //   if(typeof(keys[x]) !== "undefined")
+     //   {
+     //       console.log(localStorage.getItem(keys[x]));
+     //   }
+    //}
 
 }//function getLogs
 
@@ -161,8 +161,6 @@ function getURL(button)
     }
 }
 
-
-
 function goBack()
 {
     window.history.back();
@@ -176,3 +174,36 @@ function getBrowser()
 }
 
 
+
+function checkUser()
+{
+    event.preventDefault();
+    var form = document.getElementById("userForm");
+    var inputs = form.getElementsByTagName("input");
+    var usernameInput = inputs[0];
+    var passwordInput = inputs[1];
+
+    console.log(inputs);
+    console.log(usernameInput.value);
+    console.log(passwordInput.value);
+
+    if(usernameInput.value == "aaron" && passwordInput.value == "password")
+    {
+        var userCookie = document.cookie = usernameInput.value;
+        console.log("Username = " + userCookie);
+        console.log(document.cookie = "username = " + usernameInput.value);
+
+    }
+}
+
+
+function dom()
+{
+    document.getElementById("changeText").innerHTML = "Text changed!";
+}
+
+
+function domAttribute()
+{
+    document.getElementsByTagName("h3")[0].setAttribute("style", "color: red;");
+}

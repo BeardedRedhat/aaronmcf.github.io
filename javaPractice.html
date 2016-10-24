@@ -6,12 +6,38 @@
 </head>
 <body>
 
-<textarea type="text" id="textarea" placeholder="textarea"></textarea>
-<input type="submit" onclick="createLog()">
+<form>
+    <textarea type="text" id="textarea" placeholder="textarea"></textarea>
+    <input type="submit" onclick="createLog()"><br>
+
+    <label for="radioCheck">Check to unsubscribe</label>
+    <input type="radio" name="unsubscribe" id="radioCheck">
+</form>
 
 <div id="output1"></div>
 <div id="output2"></div>
 <div id="output3"></div>
+
+<br><br>
+<form id="userForm" onsubmit="checkUser()">
+
+    <label for="user">Username</label>
+    <input type="text" id="user">
+
+    <label for="password">Password</label>
+    <input type="password" id="password">
+
+    <input type="submit">
+
+</form>
+
+<br>
+
+<p id="changeText">Click submit to change this text</p>
+<input type="submit" id="domPract" onclick="dom()"><br>
+
+<h3>Modifying attributes using DOM elements</h3>
+<button onclick="domAttribute()">Click here</button>
 
 <script type="text/javascript" src="practice.js"></script>
 

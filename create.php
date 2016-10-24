@@ -32,7 +32,10 @@ if (isset($_POST['fullName']) && isset($_POST['date']) &&
     $ret = file_put_contents('data.txt', $txt, FILE_APPEND);
     if($ret === false)
     {
-        die('There was an error writing this file');
+        echo '<script language="javacript">';
+        echo 'alert("There was an error writing this file")';
+        echo '</script>';
+        //die('There was an error writing this file');
     }
     else
     {

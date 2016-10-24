@@ -107,7 +107,7 @@ function editLog()
             if (passwordCheck == password)
             {
                 alert("Click on any paragraph to edit");
-                document.getElementById("saveBtn").style.visibility = "visible";
+                document.getElementById("saveBtn").style.visibility = "visible";    //Modify attributes using DOM
                 var edit = document.getElementsByClassName("logEdit");
 
                 for(var x= 0; x<edit.length; x++)
@@ -142,13 +142,9 @@ function editLog()
 }//function editLog()
 
 
-function saveChanges()
-{
-
-}
 
 
-//***************** scroll to top button in my logs page **********************//
+//***** scroll to top button in my logs page *****//
 jQuery(document).ready(function($)
 {
     var offset = 300,

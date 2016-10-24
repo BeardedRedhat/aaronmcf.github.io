@@ -278,9 +278,10 @@ footer.page-footer {
     font-style: italic;
 }
 
-#saveBtn {
+#saveBtn, #textFileSubmit {
     visibility: hidden;
 }
+
 
 /**********************create image page*****************************/
 #img {
