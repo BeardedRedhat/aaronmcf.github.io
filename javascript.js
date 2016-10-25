@@ -145,6 +145,15 @@ function editLog()
 function saveChanges()
 {
     /* Save changes to contentEditable in logs.html */
+    var xr = new XMLHttpRequest();
+    var url = "saveChanges.php";
+    var text = document.getElementById("editLog9").innerHTML;
+    var vars = "newText = " + text;
+
+    xr.open("POST", url, true);
+    xr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xr.send(vars);
+
 }
 
 
