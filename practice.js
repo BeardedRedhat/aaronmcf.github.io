@@ -195,14 +195,46 @@ function checkUser()
     }
 }
 
-
 function dom()
 {
     document.getElementById("changeText").innerHTML = "Text changed!";
 }
 
-
 function domAttribute()
 {
     document.getElementsByTagName("h3")[0].setAttribute("style", "color: red;");
+}
+
+function radioOptions()
+{
+    if(document.getElementById("male").checked)
+    {
+        alert("You've chosen Male");
+    }
+    else if(document.getElementById("female").checked)
+    {
+        alert("You've chosen Female");
+    }
+}
+
+function selectOptions()
+{
+    var sel = document.getElementsByTagName("select");
+    var option1 = sel[0];
+    var option2 = sel[1];
+    var option3 = sel[2];
+
+    for(var i=0; i<sel.length; i++)
+    {
+        if(sel[i] == 0) {
+            console.log("Option 1 selected.");
+        }
+        else if(sel[i] == 1) {
+            console.log("Option 2 selected.");
+        }
+        else {
+            console.log("Option 3 selected.");
+        }
+    }
+
 }
