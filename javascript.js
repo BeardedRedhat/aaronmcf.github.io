@@ -163,7 +163,7 @@ function feedbackCook()
 
 
 
-//***** scroll to top button in my logs page *****//
+//***** scroll to top button in myLogs.html *****//
 jQuery(document).ready(function($)
 {
     var offset = 300,
