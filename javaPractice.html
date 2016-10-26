@@ -3,60 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Java Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
 
-<form>
-    <textarea type="text" id="textarea" placeholder="textarea"></textarea>
-    <input type="submit" onclick="createLog()"><br>
+<div class="container">
 
-    <label for="radioCheck">Check to unsubscribe</label>
-    <input type="radio" name="unsubscribe" id="radioCheck">
-</form>
+    <form>
+        <textarea type="text" id="textarea" placeholder="textarea"></textarea>
+        <input type="submit" onclick="createLog()"><br>
 
-<div id="output1"></div>
-<div id="output2"></div>
-<div id="output3"></div>
+        <label for="radioCheck">Check to unsubscribe</label>
+        <input type="radio" name="unsubscribe" id="radioCheck">
+    </form><hr>
 
-<br><br>
-<form id="userForm" onsubmit="checkUser()">
 
-    <label for="user">Username</label>
-    <input type="text" id="user">
+    <div class="row">
+        <div class="col-sm-8 offset-sm-2"
+            <form id="userForm" onsubmit="checkUser()">
 
-    <label for="password">Password</label>
-    <input type="password" id="password">
+                <label for="user">Username</label>
+                <input type="text" id="user">
 
-    <input type="submit">
+                <label for="password">Password</label>
+                <input type="password" id="password">
 
-</form>
+                <input type="submit">
 
-<br>
+            </form>
+        </div>
+    </div><hr>
 
-<p id="changeText">Click submit to change this text</p>
-<input type="submit" id="domPract" onclick="dom()"><br>
+    <br>
 
-<h3>Modifying attributes using DOM elements</h3>
-<button onclick="domAttribute()">Click here</button>
+    <p id="changeText">Click submit to change this text</p>
+    <input type="submit" id="domPract" onclick="dom()"><br>
 
-<br><br>
 
-<label for="male"> Male</label>
-<input type="radio" name="gender" id="male" value="Male" onclick="radioOptions()">
+    <h3>Modifying attributes using DOM elements</h3>
+    <button onclick="domAttribute()">Click here</button><hr>
 
-<label for="female"> Female</label>
-<input type="radio" name="gender" id="female" value="Female" onclick="radioOptions()">
+    <br>
 
-<br><br>
+    <label for="male"> Male</label>
+    <input type="radio" name="gender" id="male" value="Male" onclick="radioOptions()">
 
-<label for="select">Options: </label>
-<select id="select" name="select" onclick="selectOptions()">
-    <option value="option 1">Option 1</option>
-    <option value="option 2">Option 2</option>
-    <option value="option 3">Option 3</option>
-</select>
-<p id="javaOption"> </p>
+    <label for="female"> Female</label>
+    <input type="radio" name="gender" id="female" value="Female" onclick="radioOptions()">
 
+    <br><br>
+
+    <label for="select">Options: </label>
+    <select id="select" name="select" onclick="selectOptions()">
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+    </select>
+    <p id="javaOption"> </p>
+
+    <br><br>
+
+    <div class="container">
+
+        <img src="pexels-photo-90807-large.jpg" id="photo1" onmouseover="setImage(this)" onmouseout="resetImage(this)">
+
+        <img src="pexels-photo-115045-large.jpg" id="photo2" onmouseover="setImage(this)" onmouseout="resetImage(this)">
+
+        <br><br>
+
+        <a class="btn btn-default" id="postEntryBtn" onclick="getLogs()">Get Logs</a>
+
+        <a class="btn btn-default" onclick="getURL(this)" id="button1">Get URL</a>
+
+        <a class="btn btn-default" onclick="getURL(this)" id="button2">Get URL</a>
+
+        <a class="btn btn-default" onclick="getBrowser()" id="button3">Get Browser</a>
+
+    </div>
+
+</div>
 
 <script type="text/javascript" src="practice.js"></script>
 </body>

@@ -147,7 +147,7 @@ function getURL(button)
 
     if(url.href.includes("myProfile.html"))
     {
-        //window.location = "login.html";
+        window.location = "login.html";
     }
 
     switch(button.id)
