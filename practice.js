@@ -121,8 +121,15 @@ function getLogs()
     {
         if(typeof(keys[x]) !== "undefined")
         {
-            console.log(localStorage.getItem(keys[x]));
+            values.push(localStorage.getItem(keys[x]));
         }
+    }
+
+    console.log(values);
+
+    with(values[0])
+    {
+        console.log(logName);
     }
 
 }//function getLogs
