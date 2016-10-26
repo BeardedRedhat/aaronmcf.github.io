@@ -96,21 +96,25 @@ function getLogs()
     var keys = Object.keys(localStorage);
     var i = keys.length;
 
-    //while(i--)
-    //{
-    //    if(typeof(keys[i]) !== "undefined")
-    //    {
-    //        console.log(localStorage.getItem(keys[i]));
-    //    }
-    //}//while
+    /**** do while and while loops ****
 
-    //do
-    //{
-    //    if(typeof(keys[i]) !== "undefined")
-    //    {
-    //        console.log(localStorage.getItem(keys[i]));
-    //    }
-    //}while(i--);
+    while(i--)
+    {
+        if(typeof(keys[i]) !== "undefined")
+        {
+            console.log(localStorage.getItem(keys[i]));
+        }
+    }//while
+
+    do
+    {
+        if(typeof(keys[i]) !== "undefined")
+        {
+            console.log(localStorage.getItem(keys[i]));
+        }
+    }while(i--);
+
+    *****/
 
 
     for(var x=0; x<i; x++)
@@ -120,20 +124,6 @@ function getLogs()
             console.log(localStorage.getItem(keys[x]));
         }
     }
-
-
-    //for(var x=0; x<100; x++)
-    //{
-    //    if(x > i)
-    //    {
-    //        break;
-    //    }
-
-     //   if(typeof(keys[x]) !== "undefined")
-     //   {
-     //       console.log(localStorage.getItem(keys[x]));
-     //   }
-    //}
 
 }//function getLogs
 

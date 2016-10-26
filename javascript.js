@@ -21,7 +21,7 @@ function checkContent(content)              //checking if content is present in 
 
 function createLog()
 {
-    var passwordCheck = "placementlogs";
+    const PASSWORD_CHECK = "placementlogs";
     var attempt = 3;
 
     do
@@ -33,7 +33,7 @@ function createLog()
         }
         else
         {
-            if (passwordCheck == password)
+            if (PASSWORD_CHECK == password)
             {
                 if (document.getElementById("textarea") == null)
                 {
@@ -79,7 +79,7 @@ function createLog()
             }
         }
 
-    }while(passwordCheck !== password);
+    }while(PASSWORD_CHECK !== password);
 
 }//function createLog
 
@@ -92,7 +92,7 @@ function timeout()
 
 function editLog()
 {
-    var passwordCheck = "editlogs";
+    const PASSWORD_CHECK = "editlogs";
     var attempt = 3;
 
     do
@@ -104,11 +104,12 @@ function editLog()
         }
         else
         {
-            if (passwordCheck == password)
+            if (PASSWORD_CHECK == password)
             {
                 alert("Click on any paragraph to edit");
                 document.getElementById("saveBtn").style.visibility = "visible";    //Modify attributes using DOM
                 var edit = document.getElementsByClassName("logEdit");
+                var loggedIn = document.cookie = "logged in";
 
                 for(var x= 0; x<edit.length; x++)
                 {
@@ -137,7 +138,7 @@ function editLog()
             }
         }
 
-    }while(passwordCheck !== password);
+    }while(PASSWORD_CHECK !== password);
 
 }//function editLog()
 

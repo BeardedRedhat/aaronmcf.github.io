@@ -319,6 +319,13 @@ footer.page-footer {
     font-size: 40px;
 }
 
+.lastUpdated {
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #747474;
+}
+
 
 /******************* switch ***********************/
 
