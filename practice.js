@@ -215,8 +215,10 @@ function radioOptions()
     }
 }
 
-function selectOptions()
+function selectOptions(dropDown)
 {
+    dropDown.value = 1;
+
     var sel = document.getElementsByTagName("select");
     var option1 = sel[0];
     var option2 = sel[1];
