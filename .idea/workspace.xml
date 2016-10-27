@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f61d3228-3d8e-45e8-8628-5d1158403c17" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myLogs.html" afterPath="$PROJECT_DIR$/myLogs.html" />
-    </list>
+    <list default="true" id="f61d3228-3d8e-45e8-8628-5d1158403c17" name="Default" comment="" />
     <ignored path="mdFullBkg.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -80,8 +78,8 @@
       <file leaf-file-name="myLogs.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myLogs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="583" column="16" selection-start-line="583" selection-start-column="16" selection-end-line="583" selection-end-column="16" />
+            <state relative-caret-position="645">
+              <caret line="595" column="23" selection-start-line="595" selection-start-column="23" selection-end-line="595" selection-end-column="23" />
               <folding>
                 <element signature="e#67087#67093#0" expanded="true" />
                 <element signature="e#67093#67099#0" expanded="true" />
@@ -419,12 +417,12 @@
       <workItem from="1474990995191" duration="89145000" />
       <workItem from="1476710834676" duration="33333000" />
       <workItem from="1477469991462" duration="10115000" />
-      <workItem from="1477518150509" duration="2815000" />
+      <workItem from="1477518150509" duration="2835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222468000" />
+    <option name="totallyTimeSpent" value="222488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2437" y="22" width="1563" height="1418" extended-state="0" />
@@ -946,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myLogs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="583" column="16" selection-start-line="583" selection-start-column="16" selection-end-line="583" selection-end-column="16" />
+        <state relative-caret-position="645">
+          <caret line="595" column="23" selection-start-line="595" selection-start-column="23" selection-end-line="595" selection-end-column="23" />
           <folding>
             <element signature="e#67087#67093#0" expanded="true" />
             <element signature="e#67093#67099#0" expanded="true" />
