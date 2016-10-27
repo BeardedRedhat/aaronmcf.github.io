@@ -21,7 +21,7 @@
 
 
     <div class="row">
-        <div class="col-sm-8 offset-sm-2"
+        <div class="col-sm-8 offset-sm-2">
             <form id="userForm" onsubmit="checkUser()">
 
                 <label for="user">Username</label>
@@ -57,31 +57,36 @@
 
     <label for="select">Options: </label>
     <select id="select" name="select" onclick="selectOptions()">
-        <option value="option 1">Option 1</option>
-        <option value="option 2">Option 2</option>
-        <option value="option 3">Option 3</option>
+        <option value="option 1" id="option1">Option 1</option>
+        <option value="option 2" id="option2">Option 2</option>
+        <option value="option 3" id="option3">Option 3</option>
     </select>
     <p id="javaOption"> </p>
 
     <br><br>
 
+    <div class="ol-sm-3">
+        <label for="number">Enter a decimal number and click 'Round' to round it up/down </label>
+        <input type="number" id="number"><br><br>
+        <button onclick="mathRound()">Round</button>
+        <p id="roundAns"> &nbsp;</p>
+    </div>
+
+
     <div class="container">
-
         <img src="pexels-photo-90807-large.jpg" id="photo1" onmouseover="setImage(this)" onmouseout="resetImage(this)">
-
         <img src="pexels-photo-115045-large.jpg" id="photo2" onmouseover="setImage(this)" onmouseout="resetImage(this)">
 
         <br><br>
-
         <a class="btn btn-default" id="postEntryBtn" onclick="getLogs()">Get Local Storage Logs</a>
-
         <a class="btn btn-default" onclick="getURL(this)" id="button1">Get URL</a>
-
         <a class="btn btn-default" onclick="getURL(this)" id="button2">Get URL</a>
-
         <a class="btn btn-default" onclick="getBrowser()" id="button3">Get Browser</a>
-
     </div>
+
+
+
+
 
 </div>
 

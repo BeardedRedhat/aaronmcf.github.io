@@ -235,3 +235,11 @@ function selectOptions()
     }
 
 }
+
+
+function mathRound()
+{
+    var number = document.getElementById("number").value;
+    var ans = Math.round(number);
+    alert(number + " rounded is " + ans);
+}
