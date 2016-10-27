@@ -221,6 +221,7 @@ function selectOptions()
     var option2 = sel[1];
     var option3 = sel[2];
 
+
     for(var i=0; i<sel.length; i++)
     {
         if(sel[i] == 0) {
