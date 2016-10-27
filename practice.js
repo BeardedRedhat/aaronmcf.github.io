@@ -189,6 +189,7 @@ function checkUser()
         var userCookie = document.cookie = usernameInput.value;
         console.log("Username = " + userCookie);
         console.log(document.cookie = "username = " + usernameInput.value);
+        alert("Logged in");
     }
 }
 

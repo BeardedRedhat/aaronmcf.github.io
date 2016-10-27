@@ -69,12 +69,20 @@ function createLog()
             else
             {
                 attempt--;
-                alert("Incorrect Password. You have " + attempt + " attempts left.");
 
-                if (attempt == 0)
+                if(attempt > 1)
+                {
+                    alert("Incorrect Password. Please try again.\n(" + attempt + " attempts left)");
+                }
+                else if(attempt > 0)
+                {
+                    alert("Incorrect Password. Please try again.\n(" + attempt + " attempt left)");
+                }
+                else if (attempt == 0)
                 {
                     document.getElementById("postEntryBtn").disabled = true;
-                    window.location.href = "index.html";
+                    //window.location.href = "index.html";
+                    return;
                 }
             }
         }
