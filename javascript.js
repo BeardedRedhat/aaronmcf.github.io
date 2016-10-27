@@ -42,10 +42,10 @@ function createLog()
 
                 else
                 {
-                    var title = document.getElementById("logTitle").value;
-                    var date = document.getElementById("date").value;
-                    var content = document.getElementById("textarea").value;
-                    var hasContent = checkContent(content);
+                    var title = document.getElementById("logTitle").value,
+                        date = document.getElementById("date").value,
+                        content = document.getElementById("textarea").value,
+                        hasContent = checkContent(content);
 
                     if (hasContent)
                     {
@@ -81,7 +81,6 @@ function createLog()
                 else if (attempt == 0)
                 {
                     document.getElementById("postEntryBtn").disabled = true;
-                    //window.location.href = "index.html";
                     return;
                 }
             }
@@ -158,10 +157,10 @@ function saveChanges()
     if (prompt == true)
     {
         /* Save changes to contentEditable in logs.html */
-         var xr = new XMLHttpRequest();
-         var url = "saveChanges.php";
-         var text = document.getElementById("editLog9").innerHTML;
-         var vars = "newText = " + text;
+         var xr = new XMLHttpRequest(),
+             url = "saveChanges.php",
+             text = document.getElementById("editLog9").innerHTML,
+             vars = "newText = " + text;
 
          xr.open("POST", url, true);
          xr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -174,11 +173,11 @@ function saveChanges()
 
 function feedbackCook()
 {
-    var input = document.getElementsByTagName("input");
-    var nameInput = input[0];
-    var emailInput = input[1];
-    var nameCookie = document.cookie = nameInput.value;
-    var emailCookie = document.cookie = emailInput.value;
+    var input = document.getElementsByTagName("input"),
+        nameInput = input[0],
+        emailInput = input[1],
+        nameCookie = document.cookie = nameInput.value,
+        emailCookie = document.cookie = emailInput.value;
 
     console.log("Feedback user name: " + nameCookie);
     console.log("Feedback user email: " + emailCookie);
