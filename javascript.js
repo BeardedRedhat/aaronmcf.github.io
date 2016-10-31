@@ -88,7 +88,7 @@ function createLog()
 
     }while(PASSWORD_CHECK !== password);
 
-}//function createLog
+}
 
 
 function timeout()
@@ -146,8 +146,7 @@ function editLog()
         }
 
     }while(PASSWORD_CHECK !== password);
-
-}//function editLog()
+}
 
 
 function saveChanges()
@@ -156,7 +155,7 @@ function saveChanges()
 
     if (prompt == true)
     {
-        /* Save changes to contentEditable in logs.html */
+        /* Save changes to contentEditable in myLogs.html */
          var xr = new XMLHttpRequest(),
              url = "saveChanges.php",
              text = document.getElementById("editLog9").innerHTML,

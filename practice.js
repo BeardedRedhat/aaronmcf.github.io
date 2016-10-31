@@ -193,15 +193,18 @@ function checkUser()
     }
 }
 
+
 function dom()
 {
     document.getElementById("changeText").innerHTML = "Text changed!";
 }
 
+
 function domAttribute()
 {
     document.getElementsByTagName("h3")[0].setAttribute("style", "color: red;");
 }
+
 
 function radioOptions()
 {
@@ -214,6 +217,7 @@ function radioOptions()
         alert("You've chosen Female");
     }
 }
+
 
 function selectOptions(dropDown)
 {
