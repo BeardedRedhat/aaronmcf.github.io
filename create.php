@@ -40,6 +40,7 @@ if (isset($_POST['fullName']) && isset($_POST['date']) &&
     else
     {
         echo "$ret bytes written to file";
+        header('Location: postEntrySuccess.html');
     }
 }
 else

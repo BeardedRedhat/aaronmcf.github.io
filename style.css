@@ -256,7 +256,7 @@ footer.page-footer {
     color: black !important;
 }
 
-#homeLink {
+.homeLink {
     color: #377bb5 !important;
 }
 
@@ -266,8 +266,8 @@ footer.page-footer {
 }
 
 .feedbackSuccess {
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 #padding {
@@ -372,6 +372,11 @@ footer.page-footer {
 .material-switch > input[type="checkbox"]:checked + label::after {
     background: inherit;
     left: 20px;
+}
+
+.switch {
+    font-size: 14px;
+    color: #747474
 }
 
 /******************** back to top button - logs page *********************/

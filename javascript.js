@@ -152,21 +152,29 @@ function editLog()
 function saveChanges()
 {
     var prompt = confirm("Are you sure you wish to save changes?");
-
-    if (prompt == true)
+    if(prompt == null)
     {
-        /* Save changes to contentEditable in myLogs.html */
-         var xr = new XMLHttpRequest(),
-             url = "saveChanges.php",
-             text = document.getElementById("editLog9").innerHTML,
-             vars = "newText = " + text;
+        return;
+    }
+    else
+    {
+        var xr = new XMLHttpRequest(),
+            url = "saveChanges.php",
+            text = document.getElementById("editLog9").innerHTML,
+            vars = "newText = " + text;
 
-         xr.open("POST", url, true);
-         xr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-         xr.send(vars);
+        xr.open("POST", url, true);
+        xr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xr.send(vars);
+    }
+
+    /*if (prompt == true)
+    {
+
+
     } else {
         console.log("Else");
-    }
+    }*/
 }
 
 
@@ -186,6 +194,17 @@ function feedbackCook()
 function scroll() {
     console.log("test");
     window.scrollY = document.getElementById("log5").scrollTop;
+
+}
+
+function hideTable()
+{
+    if(document.getElementById("contentsTable").style.display == 'none')
+    {
+        document.getElementById("contentsTable").style.display = 'block';
+    } else {
+        document.getElementById("contentsTable").style.display = 'none';
+    }
 
 }
 
