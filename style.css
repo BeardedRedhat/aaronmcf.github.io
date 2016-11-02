@@ -283,6 +283,7 @@ footer.page-footer {
 }
 
 
+
 /**********************create image page*****************************/
 #img {
     width: 100%;
@@ -327,7 +328,7 @@ footer.page-footer {
 }
 
 
-/******************* switch ***********************/
+/******************* switch **********************/
 
 .material-switch > input[type="checkbox"] {
     display: none;
@@ -355,7 +356,7 @@ footer.page-footer {
 .material-switch > label::after {
     background: rgb(55, 123, 181);
     border-radius: 16px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     content: '';
     height: 24px;
     left: -4px;
@@ -375,9 +376,10 @@ footer.page-footer {
 }
 
 .switch {
-    font-size: 14px;
+    /*font-size: 14px;*/
     color: #747474;
 }
+
 
 /******************** back to top button - logs page *********************/
 
