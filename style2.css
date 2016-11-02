@@ -1,0 +1,56 @@
+#container 	{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.parent	{
+    height: 56px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    background-color: #00b0ff;
+
+}
+
+.parent-active {
+    transform: rotateX(0deg);
+    height: 111px;
+}
+
+
+.box {
+    height: 56px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    background-color: #00b0ff;
+}
+
+.box.active {
+    transform: rotateX(0deg);
+    height: 111px;
+}
+
+
+#container:hover .parent	{
+
+}
+
+/*
+div {
+    height: 56px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    background-color: #00b0ff;
+}
+
+div:target {
+    transform: rotateX(0deg);
+    height: 111px;
+}*/
