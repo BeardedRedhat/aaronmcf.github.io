@@ -29,13 +29,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $user = $_POST["user"];
         $title = $_POST["title"];
-        $today = date("Y-m-d");
+        $today = date("Y-m-d", strtotime($_POST["date"]));
         $log = $_POST["log"];
         $sql = "INSERT INTO logs(user, title, date_created, log_entry) VALUES('$user','$title','$today','$log')";
         $db -> exec($sql);
         echo "Success";
     }
-
 }
 else {
     ?>
@@ -84,6 +83,7 @@ else {
 
         var user = document.getElementById("user").value,
             title = document.getElementById("title").value,
+            date = document.getElementById("date").value,
             log = document.getElementById("log").value;
         var xhttp = new XMLHttpRequest();
 
