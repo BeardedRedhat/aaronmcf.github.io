@@ -194,7 +194,6 @@ function feedbackCook()
 function scroll() {
     console.log("test");
     window.scrollY = document.getElementById("log5").scrollTop;
-
 }
 
 function hideTable()

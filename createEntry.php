@@ -160,7 +160,7 @@ else {
                 </form>
             </div>
         </div>
-    </div> 
+    </div>
 
     <a href="data.rtf">Text File</a>
 
