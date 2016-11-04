@@ -64,25 +64,6 @@ else {
 
     <body>
 
-
-    <!--
-    <div class="left">
-        <div class="item">
-            <a href="index.html"></a><span class="glyphicon"><i class ="material-icons">home</i></span>
-        </div></a>
-        <div class="item">
-            <a href="createEntry.html"></a><span class="glyphicon"><i class="material-icons">mode_edit</i></span>
-            Create Log Entry</div></a>
-        <div class="item active">
-            <a href="myLogs.html"><span class="glyphicon"><i class="material-icons">list</i></span>
-                My Logs</div></a>
-        <div class="item">
-            <a href="myProfile.html"><span class="glyphicon"><i class="material-icons">person</i></span>
-                My Profile</div></a>
-    </div>
-
-    </div>-->
-
     <!-------navbar------->
     <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
 
@@ -179,7 +160,7 @@ else {
                 </form>
             </div>
         </div>
-    </div>
+    </div> 
 
     <a href="data.rtf">Text File</a>
 
@@ -269,7 +250,6 @@ else {
 
             }while(PASSWORD_CHECK !== password);
         }
-
 
     </script>
 
