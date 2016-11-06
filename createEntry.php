@@ -75,23 +75,19 @@ else {
             <a class="navbar-brand" target="_blank">Placement Logs</a>
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><i
-                            class="material-icons">home</i><span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><i class="material-icons">home</i><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="createEntry.php" data-toggle="tooltip" data-placement="bottom"
-                       title="Create Log Entry"><i class="material-icons">mode_edit</i></a>
+                    <a class="nav-link" href="createEntry.php" data-toggle="tooltip" data-placement="bottom" title="Create Log Entry"><i class="material-icons">mode_edit</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="myLogs.html" data-toggle="tooltip" data-placement="bottom"
-                       title="All Log Entries"><i class="material-icons">list</i></a>
+                    <a class="nav-link" href="myLogs.html" data-toggle="tooltip" data-placement="bottom" title="All Log Entries"><i class="material-icons">list</i></a>
                 </li>
                 <!--<li class="nav-item">
                     <a class="nav-link" href="myProfile.html"><i class="material-icons">person</i></a>
                 </li>-->
                 <li class="nav-item">
-                    <a class="nav-link" href="feedback.html" data-toggle="tooltip" data-placement="bottom"
-                       title="Feedback"><i class="material-icons">mail_outline</i></a>
+                    <a class="nav-link" href="feedback.html" data-toggle="tooltip" data-placement="bottom" title="Feedback"><i class="material-icons">mail_outline</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
@@ -115,7 +111,6 @@ else {
                 <input class="form-control" type="text" placeholder="Search">
             </form>
         </div>
-
     </nav>
 
 
