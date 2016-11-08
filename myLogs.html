@@ -664,17 +664,32 @@
     <a NAME="log12"></a>
     <div class="media">
         <div class="media-left">
-            <a href="myProfile.html" >
+            <a href="myProfile.html">
                 <img class="img-circle" src="img/me.jpg" width="64px" height="64px" alt="Profile Photo">
             </a>
         </div>
         <div class="media-body">
             <h4 class="media-heading">Javascript 4 - Javascript Technology Extensions</h4>
             <p><i>Thursday 3rd November 2016</i></p>
-            <p class="logEdit">Now that computing technology has progressed vastly, with multiple programming languages for different purposes, there has been a number of predefined libraries or plug-ins that’s basically a collection of data, templates and pre-written code that can be called or referenced in a software program. Using these libraries can have a number if implications, but also seen to have benefits to a software developer. Some of the main benefits of using such libraries include the reusability, i.e. one simple piece of code could be used thousands of times by various developers; web caching in that if a user visits your website that have already a copy of the file from the library, it will then subsequently increase the performance of the webpage. However, website plugins tend to be targeted upon by malicious attackers to inject with XSS or other harmful software. In some cases, the plugin will be infected directly or it could be referencing code that has been infected. Another drawback that comes with predefined libraries and plugins is that they will depreciate quickly due to a lack of support, meaning they can become outdated/obsolete or liable to security threats.</p>
-            <p class="logEdit">Libraries are easy to implement into a program/website. To do this the first step is to locate the library’s source file, either by downloading and saving the file into your project, or via URL. The library then needs to be referenced in the head of the webpage using &ltlink&gt tag, meaning that the user can now call a particular method/event and input custom parameters/values. </p>
-            <p class="logEdit">The XMLHttpRequest object is used to request data from a server and return to the client without having to refresh the page, i.e. it allows the page to automatically update without disturbing what the user is doing. XMLHttpRequest is an object thats included in AJAX-based requests. AJAX stands for Asynchronous Javascript And XML, and allows a developer to request/receive data from a server in the background by combining the XMLHttpRequest object and Javascript/HTML DOM to display the fetched data. The process in which AJAX works is first, an event occurring (page loaded or button), then creating and sending the request object from the browser to the server. The server will process the request and sends a response back to the browser, where the browser will then read the response using Javascript and update the page content. </p>
-            <p class="logEdit">However, using AJAX-based requests is not the only way to fetch and receive data in the background. Some alternatives to AJAX include XUL or XML User Interface Language which was developed by Mozilla that allows applications to run, even when not connected to the internet, Java Applets that allows the attachment of Java Programs into an HTML page to perform similar tasks to Ajax, or Ruby on Rails which is an object orientated language used for database-driven applications. </p>
+            <p class="logEdit">Now that computing technology has progressed vastly, with multiple programming languages for different purposes, there has been a number of predefined libraries or plug-ins that’s basically a collection of data,
+                templates and pre-written code that can be called or referenced in a software program. Using these libraries can have a number if implications, but also seen to have benefits to a software developer. Some of the main benefits
+                of using such libraries include the reusability, i.e. one simple piece of code could be used thousands of times by various developers; web caching in that if a user visits your website that have already a copy of the file from
+                the library, it will then subsequently increase the performance of the webpage. However, website plugins tend to be targeted upon by malicious attackers to inject with XSS or other harmful software. In some cases, the plugin
+                will be infected directly or it could be referencing code that has been infected. Another drawback that comes with predefined libraries and plugins is that they will depreciate quickly due to a lack of support, meaning they
+                can become outdated/obsolete or liable to security threats.</p>
+            <p class="logEdit">Libraries are easy to implement into a program/website. To do this the first step is to locate the library’s source file, either by downloading and saving the file into your project, or via URL. The library then
+                needs to be referenced in the head of the webpage using &ltlink&gt tag, meaning that the user can now call a particular method/event and input custom parameters/values. </p>
+            <p class="logEdit">The XMLHttpRequest object interacts with XML by initially sending a request in XML, then using the responseXML method so that Javascript can then interpret and parse the XML into the data that was being fetched.
+                Overall, it allows the user to request data from a server and return to the client without having to refresh the page, i.e. it allows the page to automatically update without disturbing what the user is doing. XMLHttpRequest
+                is an object thats included in AJAX-based requests. AJAX stands for Asynchronous Javascript And XML, and allows a developer to request/receive data from a server in the background by combining the XMLHttpRequest object and
+                Javascript/HTML DOM to display the fetched data. The process in which AJAX works is first, an event occurring (page loaded or button), then creating and sending the request object from the browser to the server. The server
+                will process the request and sends a response back to the browser, where the browser will then read the response using Javascript and update the page content. </p>
+            <p class="logEdit">However, using AJAX-based requests is not the only way to fetch and receive data in the background. Some alternatives to AJAX include XUL or XML User Interface Language which was developed by Mozilla that allows
+                applications to run, even when not connected to the internet, Java Applets that allows the attachment of Java Programs into an HTML page to perform similar tasks to Ajax, or Ruby on Rails which is an object orientated language
+                used for database-driven applications. </p>
+            <p class="logEdit">XML, much like any other languages, has a structure and restrictions that must be followed to successfully run. When performing an Ajax request, the XML response must be parsed in Javascript so it can be
+                interpreted but to do this the XML document must be declared with the MIME type set as ‘text/xml’ and should follow the basic tag structure. XML responses are also limited to a particular size of 2,147,483,647 characters which
+                is disadvantaged compared to JSON that has no response limit. </p>
         </div>
     </div>
     <hr />
