@@ -123,18 +123,18 @@ else {
                         <h2><span class="createTitle animated fadeIn">Create Log Entry</span></h2>
                         <br><br>
 
-                        <div class="md-form col-sm-4 offset-sm-2">
+                        <div class="md-form col-md-4 offset-md-2">
                             <input placeholder="Enter first and last name" type="text" name="fullName" id="fullName" class="form-control animated fadeIn">
                         </div>
-                        <div class="md-form col-sm-4">
+                        <div class="md-form col-md-4">
                             <input type="text" name="date" id="date" class="form-control animated fadeIn" value="<?= date("d/m/Y") ?>">
                         </div>
 
-                        <div class="md-form col-sm-8 offset-sm-2">
+                        <div class="md-form col-md-8 offset-md-2">
                             <input placeholder="Enter Log title" type="text" name="logTitle" id="logTitle" class="form-control animated fadeIn">
                         </div>
 
-                        <div class="md-form col-sm-8 offset-sm-2">
+                        <div class="md-form col-md-8 offset-md-2">
                             <textarea type="text" name="textarea" id="textarea" placeholder="Enter Log" class="md-textarea animated fadeIn"></textarea>
                         </div>
                     </div>
@@ -163,10 +163,6 @@ else {
     <script type="text/javascript">
 
         $('#textarea').trigger('autoresize');
-
-    </script>
-
-    <script>
 
         function checkContent(content)              //checking if content is present in text area
         {

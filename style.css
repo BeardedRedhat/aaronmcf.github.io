@@ -282,6 +282,12 @@ footer.page-footer {
     visibility: hidden;
 }
 
+.navbar-nav li {
+    vertical-align: center;
+    text-align: center;
+    line-height: 1em;
+    margin: auto 0;
+}
 
 
 /**********************create image page*****************************/
