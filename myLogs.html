@@ -190,13 +190,19 @@
                 <td>Aaron McFarland</td>
                 <td>#012 Javascript 4 - Javascript Technology Extensions</td>
                 <td>03/11/2016</td>
-                <td align="center"><a href="myLogs.html#log11" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
+                <td align="center"><a href="myLogs.html#log12" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
             </tr>
             <tr>
                 <td>Aaron McFarland</td>
                 <td>#013 Understanding Web Browsers</td>
                 <td>08/11/2016</td>
-                <td align="center"><a href="myLogs.html#log11" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
+                <td align="center"><a href="myLogs.html#log13" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
+            </tr>
+            <tr>
+                <td>Aaron McFarland</td>
+                <td>#014 Web Diagram and Design 1</td>
+                <td>##/11/2016</td>
+                <td align="center"><a href="myLogs.html#log14" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
             </tr>
             </tbody>
         </table>
@@ -217,10 +223,31 @@
             </a>
         </div>
         <div class="media-body">
-
             <h4 class="media-heading">Intro to HTML, CSS, Audio files and Local Web Storage</h4>
             <p><i>Thursday 8th September 2016</i></p>
-            <p><div id="result"></div></p>
+            <p class="logEdit">The first task was to create a blank HTML file called 'index', containing the basic structure that makes up a website, i.e <code>&lthtml&gt, &lthead&gt, &ltbody&gt</code> tags.
+                The html tag tells us what language we are going to program in, then below that the head tag will contain any links or scripts needed for the page. The body tag will contain all the elements
+                needed to make up the webpage.  The next step was to add in a header, an introduction paragraph, a table of contents and a hyperlink to the W3schools website. The header is inserted using a
+                <code>&lth&gt</code> tag, followed by a number between 1 & 7 (determines the size of the header with 1 being the largest). The paragraph was inserted by using the <code>&ltp&gt</code> tag,
+                telling the computer that we want to insert a paragraph.</p>
+            <p class="logEdit">The table is a bit more than just one tag as we need to tell the computer when to insert rows, column etc. It starts with a <code>&lttable&gt</code> opening tag, followed by a
+                <code>&lttr&gt</code>, telling us that we want to insert a row. Inside that tag, we use a series of <code>&lttd&gt</code> tags, which will determine how many columns we want. As the very first
+                row in a table is usually a header, we can use <code>&ltth&gt</code> instead of <code>&lttd&gt</code> for the first row which will automatically format the first row into a header. To add in
+                a hyperlink for w3schools, I decided to hyperlink a picture of the w3schools logo in the footer. To do this, I used an anchor tag with the link in ‘href’, i.e. <code>&lta href=“##”&gt</code>,
+                followed by the image before the ‘a’ tag was closed off. I then created an external css file, meaning that I could format the elements created, changing the font, size, colour and position. to
+                format the colour in CSS, we simply use <code>colour: ##;</code> followed by the colour in hexadecimal or predetermined colours. To change the size of something, for example, my jumbotron, we
+                can use <code>height: ##;</code> and <code>width: ##;</code> which allows us to specify the exact width and height in pixels, percentages, em or rem. The different sizing options will suit
+                whether or not you prefer a fixed or fluid layout. The table and introduction paragraph we now want to be fluid layout. We do this by changing their size properties to percentages, and setting
+                position to absolute.</p>
+            <p class="logEdit">Two audio files, one .mp3 and the other .ogg, were created by taking my audio recording and converting them into both audio formats on www.media.io. The next stage is to
+                insert the audio and controls by using <code>&ltaudio controls&gt</code>, which will display a default media player. The final element inserted was an API, more specifically a local web storage. I did
+                this by creating a script, then using an if statement to determine if the computer is capable of storing data. If so, I used <code>localStorage.setItem</code> to set the user, title, date and content of
+                the log. Once they are stored, we need to retrieve them and display it to the screen. To retrieve, we use <code>document.getElementById(“##”).innerHTML = localStorage.getItem(“##”)</code>, where the
+                getElementById will search for that id within the html code, and input the content we insert into <code>.getItem()</code>. In my website, I inserted a <code>&ltdiv&gt</code> with an <code>id=“result”</code>
+                to display the stored content.</p>
+
+            <!-- display log through local storage --
+            <p><div id="result"></div></p> --------->
         </div>
     </div>
     <hr />
@@ -238,22 +265,21 @@
             <h4 class="media-heading">HTML and CSS 2 - Styling and Transitions</h4>
             <p><i>Tuesday 13th September 2016 </i></p>
             <p class="logEdit">The task this week consisted of applying CSS styles and transitions to the project website. The first part we did was applying a CSS font to
-                the body by using ‘font-family: ##;’, as well as using google fonts to include a wider range of fonts. I then moved onto putting a few text
-                effects, such as bold or italic. I wanted to make the text in a row appear bold when hovered over, so in css I used ‘font-weight: 500;’ in a
-                class ‘.table-striped tr:hover’. In font-weight you can just type bold, but if you want specific weight to it, you can choose from 100-900.
+                the body by using <code>font-family: ##;</code>, as well as using google fonts to include a wider range of fonts. I then moved onto putting a few text
+                effects, such as bold or italic. I wanted to make the text in a row appear bold when hovered over, so in css I used <code>font-weight: 500;</code> in a
+                class <code>.table-striped tr:hover {}</code>. In font-weight you can just type bold, but if you want specific weight to it, you can choose from 100-900.
                 The next part was to add a background colour to an element. I decided to change the background colour of the navbar simply by using the
-                ‘background-color: ##;’ attribute, along with the colour in hexidecimal format.</p>
-            <p class="logEdit">To add a border onto an HTML element, we use ‘border-style: ##;’ and use preferences like dashed or solid, go give your border a specific look.
-                I then added rounded corners onto the border using ‘border-radius: #px;’ attribute, which will take the number value and apply it as a radius on
+                <code>background-color: ##;</code> attribute, along with the colour in hexidecimal format.</p>
+            <p class="logEdit">To add a border onto an HTML element, we use <code>border-style: ##;</code> and use preferences like dashed or solid, go give your border a specific look.
+                I then added rounded corners onto the border using <code>border-radius: #px;</code> attribute, which will take the number value and apply it as a radius on
                 each corner so the higher the number, the more round it will become. I applied this to a line of text at the bottom of my feedback page to give it
                 a more emphatic effect. On the home page, I have an ISArc logo displayed in the center. I then put a hover property on it, meaning that when a mouse
                 is hovering over it, I can change the effects of it. I have the image currently at 70% width and height but have added in a transition for the hover
-                by adding ‘:hover’ on the end of the id, and using the ‘transform:scale(1.1,1.1);’ attribute, it now enlarges by 10% when a user hovers on it. In the
+                by adding <code>:hover</code> on the end of the id, and using the <code>transform:scale(1.1,1.1);</code> attribute, it now enlarges by 10% when a user hovers on it. In the
                 css for the image (not hover), the transition is set to 0.5s, meaning that it takes 0.5s to carry out the transition. For added effect, I decided to
-                add in an opacity attribute to the hover element (opacity: 0.8;), so that it will go to 80% opacity when hovered. Overall, it adds a nice visual effect
-                to the logo. The navbar at the top of every page is made up of an unordered list, with each &ltli&gt as a button. I did this by first opening a &ltul&gt
-                tag, which tells us we want an unordered list, then inside the tag, we use a series of &ltli&gt tags, which act as each point in the list.
-            </p>
+                add in an opacity attribute to the hover element <code>opacity: 0.8;</code>, so that it will go to 80% opacity when hovered. Overall, it adds a nice visual effect
+                to the logo. The navbar at the top of every page is made up of an unordered list, with each <code>&ltli&gt</code> as a button. I did this by first opening a <code>&ltul&gt</code>
+                tag, which tells us we want an unordered list, then inside the tag, we use a series of <code>&ltli&gt</code> tags, which act as each point in the list.</p>
         </div>
     </div>
     <hr />
@@ -576,8 +602,8 @@
             <p class="logEdit">When writing any program in any language, it is always useful to use good coding practices as it can make the code much more readable for yourself and others, especially if there is a bug that needs found. Simple
                 practices include putting all declarations at the top, avoiding global variables as they can be overwritten by other scripts, or making good use of comments to divide sections or describe a function. Global variables are declared
                 outside the function, i.e. its relevant to all functions and can be overwritten, however local variables are declared within the function meaning they’re cannot be used outside of that specific function. In Javascript, the symbol
-                for contention and addition is the same (‘+’), and are used differently. Concatenation is used for adding on a string to display, for example if a variable was declared ‘var message = “hello”;’ , we can display this by concatenating
-                it, e.g. ‘alert(“The user says” + message);’, whereas addition is used if we wish to add two numbers together, e.g. ‘var x = 5.7 + 6.3;’. </p>
+                for contention and addition is the same (‘+’), and are used differently. Concatenation is used for adding on a string to display, for example if a variable was declared <code>var message = “hello”;</code> , we can display this by concatenating
+                it, e.g. <code>alert(“The user says” + message);</code>, whereas addition is used if we wish to add two numbers together, e.g. <code>var x = 5.7 + 6.3;</code>. </p>
             <div id="output1"></div>
             <div id="output2"></div>
             <div id="output3"></div>
@@ -684,7 +710,7 @@
                 will be infected directly or it could be referencing code that has been infected. Another drawback that comes with predefined libraries and plugins is that they will depreciate quickly due to a lack of support, meaning they
                 can become outdated/obsolete or liable to security threats.</p>
             <p class="logEdit">Libraries are easy to implement into a program/website. To do this the first step is to locate the library’s source file, either by downloading and saving the file into your project, or via URL. The library then
-                needs to be referenced in the head of the webpage using &ltlink&gt tag, meaning that the user can now call a particular method/event and input custom parameters/values. </p>
+                needs to be referenced in the head of the webpage using <code>&ltlink&gt</code> tag, meaning that the user can now call a particular method/event and input custom parameters/values. </p>
             <p class="logEdit">The XMLHttpRequest object interacts with XML by initially sending a request in XML, then using the responseXML method so that Javascript can then interpret and parse the XML into the data that was being fetched.
                 Overall, it allows the user to request data from a server and return to the client without having to refresh the page, i.e. it allows the page to automatically update without disturbing what the user is doing. XMLHttpRequest
                 is an object thats included in AJAX-based requests. AJAX stands for Asynchronous Javascript And XML, and allows a developer to request/receive data from a server in the background by combining the XMLHttpRequest object and
@@ -713,15 +739,15 @@
             <h4 class="media-heading">Understanding Web Browsers</h4>
             <p><i>Tuesday 8th November 2016</i></p>
             <p class="logEdit">Uniform Resource Identifier or URI refers to the identity of a particular resource, containing two subsidaries: URL’s and URN’s. For anyone who has used a web browser will be familiar with a URL (Uniform Resource
-                Locator) which is what we see at the top of a website, i.e. it is the location of the website containing the websites domain name (URL: http://www.google.co.uk/), whereas a URN or Uniform Resource Name is used to identify the
-                resource, e.g. a URN would typically take this format ’urn:oasis:names:docbook:dtd:xml:4.1.2’. </p>
+                Locator) which is what we see at the top of a website, i.e. it is the location of the website containing the websites domain name <code>(URL: http://www.google.co.uk/)</code>, whereas a URN or Uniform Resource Name is used to identify the
+                resource, e.g. a URN would typically take this format <code>’urn:oasis:names:docbook:dtd:xml:4.1.2’</code>. </p>
             <p class="logEdit">Many websites nowadays are now pestered with adverts or popup ads that can be a pain. Now however, there are a number of simple ways to block such adverts and some ways don’t require any additional downloads.
                 There are some browsers that come with a built in ad blocker, such as Opera which can be downloaded on windows or OS, but some do not which is why there are now 3rd party plugins which block any incoming adverts that cause any
                 annoyance, e.g. Adblocker being the most popular plugin. If however, you are experiencing ads not only on your browser but other applications, there is ad-blocking software that can be downloaded and installed onto your OS that
                 block ads regardless of which program its on, e.g. AdFender which works independently from web browsers.</p>
             <p class="logEdit">Many websites now make use of various encryption methods for users if they are, for example, entering private details so that no outside malicious attacker can gain access to the information. One of the encryption
                 methods used most commonly is SSL or Secure Sockets Layer, which operates using verification certificates, meaning that if the website has a trusted certificate, it will then begin an encrypted session which is identifiable by
-                the ‘https://‘ rather than ‘http://'. SSL, however, has now been replaced by a more secure and up-to-date protocol called Transport Layer Security or TLS that implements more secure algorithms, using public key authentication and
+                the <code>‘https://‘</code> rather than <code>‘http://'</code>. SSL, however, has now been replaced by a more secure and up-to-date protocol called Transport Layer Security or TLS that implements more secure algorithms, using public key authentication and
                 a message authentication code to ensure that no data is lost. </p>
             <p class="logEdit">Some companies or even schools tend to make use of Intranet or Extranet as opposed to the internet. The reason for this is that it is more secure and can also control who has access to certain resources. The
                 internet is basically a global network that allows anyone at any place to access resources or websites without being on a particular network. Intranet on the other hand, is whats used for local networks to share and communicate
@@ -732,8 +758,17 @@
                 with business operation and finance as different companies will be able to communicate or have video conferences, reducing downtime and costs. Even for handling a businesses financial situation can be done online, with web some
                 web systems even monitoring and calculating different figures that would otherwise have to be done manually. As mentioned before, the use of Intranets and private networks can greatly aid a businesses control of resources and
                 access, giving additional security and allowing employers to strive toward a more paperless approach. </p>
-            <p class="logEdit"></p>
-            <p class="logEdit"></p>
+            <p class="logEdit">When it comes to web browsing, different browsers have their own strengths and weaknesses, along with diffferent levels of functionality. The first widely known and used web browser that was introduced to windows
+                was Internet Explorer owned by Microsoft, which comes preloaded onto Windows 8. It is widely used throughout the world and is known for being easy to use, especially for those people who are not very computer literate, but is
+                also known for some problems. IE’s main issues are that of speed and security, as it is a main target for malicious hackers due to the lack of responsiveness to bugs or any issues with the browser, also resulting in the speed
+                of the browser. Safari, the web browser produced by Apple, is supported in Mac OX and windows, but reeks benefits as opposed to IE, as it is well known for its fast page-load times and has all security features built in, giving
+                overall better browsing experience with better usability. However, Safari does lack in aesthetic and operating customisation as opposed to other browsers, as there is very little to no aesthetic customisation. This is where
+                browsers like Google Chrome or Mozilla Firefox gain the advantage as they both have highly customisable browsers, and both with very high operating speeds. </p>
+            <p class="logEdit">The CAPTCHA program is designed to check if a user is a bot or human by generating unique tests that only humans will be able to pass. In most cases, the tests provided will show some distorted text and ask you
+                to type in what the text reads. This program has aided in preventing many counterfeit users, e.g. it would help protect against any online polling or website sign ups. </p>
+            <p class="logEdit">With the introduction of anonymous or private browsing, there has been a decline in the number of related viruses, as it allows a user to browse the internet without any personal information or browsing history
+                to be stored on the computer, giving that sense of privacy that many don’t feel when using the internet. Not only does it not store any information, but it blocks any websites from reading any of your existing identifiable
+                information. In most web browsers, accessing anonymous browsing is relatively easy, in that it will usually be in the menu or there will be an incognito symbol to click on.</p>
         </div>
     </div>
     <hr />
@@ -748,8 +783,8 @@
             </a>
         </div>
         <div class="media-body">
-            <h4 class="media-heading">##</h4>
-            <p><i>Thursday 3rd November 2016</i></p>
+            <h4 class="media-heading">Web Diagram and Design 1</h4>
+            <p><i>## ##th November 2016</i></p>
             <p class="logEdit"></p>
             <p class="logEdit"></p>
             <p class="logEdit"></p>
