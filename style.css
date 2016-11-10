@@ -17,6 +17,16 @@ a {
     color: white !important;
 }
 
+.noWhite {
+    color: black !important;
+}
+
+.navFill {
+    background-color: #1C2331;
+    width: 100%;
+    height: 57px;
+}
+
 .row {
     padding-top: 3em;
 }
@@ -266,7 +276,7 @@ footer.page-footer {
 }
 
 .feedbackSuccess {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 

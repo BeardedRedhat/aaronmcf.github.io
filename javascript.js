@@ -207,6 +207,11 @@ function hideTable()
 
 }
 
+function goBack() {
+    window.history.back();
+    console.log("Previous");
+}
+
 //***** scroll to top button in myLogs.html *****//
 jQuery(document).ready(function($)
 {

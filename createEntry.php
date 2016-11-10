@@ -90,7 +90,7 @@ else {
                     <a class="nav-link" href="feedback.html" data-toggle="tooltip" data-placement="bottom" title="Feedback"><i class="material-icons">mail_outline</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link navIcon" href="loginSignTemp.html" data-toggle="tooltip" data-placement="bottom" title="Login/Sign Up"><i class="material-icons">person_add</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
