@@ -17,6 +17,10 @@ a {
     color: white !important;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .noWhite {
     color: black !important;
 }
