@@ -5,25 +5,20 @@ body,
     /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
 }
 
-.normalHprLink {
-    color: #377bb5 !important;
+ul li {display: list-item; }
+.row { padding-top: 3em; }
+
+.mediaPic {
+    width: 64px;
+    height: 64px;
 }
 
-.normalHprLink:hover {
-    text-decoration: underline;
-}
+.normalHprLink { color: #377bb5 !important; }
+.normalHprLink:hover { text-decoration: underline; }
+.noWhite { color: black !important; }
 
-a {
-    color: white !important;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.noWhite {
-    color: black !important;
-}
+a { color: white !important; }
+a:hover { text-decoration: underline; }
 
 .navFill {
     background-color: #1C2331;
@@ -31,23 +26,14 @@ a:hover {
     height: 57px;
 }
 
-.row {
-    padding-top: 3em;
-}
-
-.navbar {
-     background-color: transparent;
- }
-
+.navbar { background-color: transparent;  }
 .scrolling-navbar {
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 
-.top-nav-collapse {
-    background-color: #1C2331;
-}
+.top-nav-collapse { background-color: #1C2331; }
 
 footer.page-footer {
     background-color: #1C2331;
@@ -62,13 +48,8 @@ footer.page-footer {
     }
 }
 
-.flex {
-    padding-top: 100px;
-}
-
-.flex-center {
-    color: #fff;
-}
+.flex { padding-top: 100px; }
+.flex-center { color: #fff; }
 
 .view {
     background: url(img/img1.jpg)no-repeat center center fixed;
@@ -129,9 +110,7 @@ footer.page-footer {
     padding-bottom: 120px;
 }
 
-.create1 {
-    padding-top: 100px;
-}
+.create1 { padding-top: 100px; }
 
 #jumboLogo {
     transition: 0.5s;
@@ -154,13 +133,9 @@ footer.page-footer {
     font-size: 15px;
 }
 
-.media {
-    padding-top: 20px;
-}
+.media { padding-top: 20px; }
 
-#fullName, #logTitle, #date, #textarea {
-    color: white;
-}
+#fullName, #logTitle, #date, #textarea { color: white; }
 
 .createTitle {
     color: white;
@@ -171,43 +146,22 @@ footer.page-footer {
     padding: 10px;
 }
 
-.center {
-    margin: auto;
-}
+.center { margin: auto; }
 
-#signUpForm {
-    text-align: center;
-}
+#signUpForm { text-align: center; }
 
 .table-striped {            /* My logs table */
     text-align: left;
     font-size: 14px;
 }
 
-.table-striped.tr {
-    !important;
-    line-height: 20px;
-}
+.table-striped.tr { line-height: 20px !important; }
+.table-striped tr:hover { font-weight: 500; }
 
-.table-striped tr:hover {
-    font-weight: 500;
-}
-
-.userCol {
-    width: 20.5%;
-}
-
-.dateCol {
-    width: 11.5%;
-}
-
-.titleCol {
-    width: 43%;
-}
-
-.viewCol {
-    width: 5%;
-}
+.userCol { width: 20.5%; }
+.dateCol { width: 11.5%; }
+.titleCol { width: 43%; }
+.viewCol { width: 5%; }
 
 #img-circle1 { /* Home page pic*/
     box-shadow: 10px 10px 5px #888888 !important;
@@ -215,23 +169,15 @@ footer.page-footer {
     height: 175px;
 }
 
-.img-circle {
-    box-shadow: none !important;
-}
+.img-circle { box-shadow: none !important; }
 
-.introFormat {
-    text-align: justify;
-}
+.introFormat { text-align: justify; }
 
 #feedbackLink {
     font-weight: bold !important;
     text-decoration: underline;
-
 }
-
-#feedbackLink:hover {
-    text-decoration: underline;
-}
+#feedbackLink:hover { text-decoration: underline;  }
 
 #signUp {
     background-color: #ede8ee;
@@ -266,13 +212,9 @@ footer.page-footer {
     -webkit-transform:scale(1.2,1.2);
 }
 
-.feedback {
-    color: black !important;
-}
+.feedback { color: black !important; }
 
-.homeLink {
-    color: #377bb5 !important;
-}
+.homeLink { color: #377bb5 !important; }
 
 #homeLink:hover {
     text-decoration: underline !important;
@@ -284,17 +226,11 @@ footer.page-footer {
     padding-bottom: 100px;
 }
 
-#padding {
-    padding-bottom: 70px;
-}
+#padding { padding-bottom: 70px; }
 
-.date {
-    font-style: italic;
-}
+.date { font-style: italic; }
 
-#saveBtn, #textFileSubmit {
-    visibility: hidden;
-}
+#saveBtn, #textFileSubmit { visibility: hidden; }
 
 .navbar-nav li {
     vertical-align: center;
