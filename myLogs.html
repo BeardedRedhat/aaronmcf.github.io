@@ -1002,6 +1002,8 @@
         second = now.getSeconds();
         document.write("Last updated on " +date+ "/" +month+ "/" +year+ " " +hour+ ":" +minute+ ":" +second);
 
+        /**** function to add code into contentEditable ****/
+
         function addCode() {
             event.preventDefault();
             console.log(document.getElementById("logs"));
@@ -1013,6 +1015,12 @@
                     $(this).innerHTML = $(this).innerHTML + "<code>&nbsp;</code>";
                 }
             });
+
+            var media = document.getElementsByClassName("media-body");
+            for(var x=0; x<media.length; x++)
+            {
+                console.log("test");
+            }
 
 //            $("#logs .media .media-body").each(function() {
 //                console.log($(this));
