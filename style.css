@@ -51,7 +51,7 @@ footer.page-footer {
 .flex-center { color: #fff; }
 
 .view {
-    background: url(img/img1.jpg)no-repeat center center fixed;
+    background: url(img/backgrounds/img1.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -59,7 +59,7 @@ footer.page-footer {
 }
 
 .view1 {
-    background: url(img/img1.jpg)no-repeat center center fixed;
+    background: url(img/backgrounds/img1.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,7 +67,7 @@ footer.page-footer {
 }
 
 #logBkg {
-    background: url(img/myLogs1.jpg)no-repeat center center fixed;
+    background: url(img/backgrounds/myLogs1.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -75,7 +75,7 @@ footer.page-footer {
 }
 
 #createBkg {
-    background: url(img/write.jpg)no-repeat center center fixed;
+    background: url(img/backgrounds/write.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -349,7 +349,7 @@ footer.page-footer {
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    background: rgba(28, 35, 48, 0.9) url(img/cd-top-arrow.svg) no-repeat center 50%;
+    background: rgba(28, 35, 48, 0.9) url(img/icons/cd-top-arrow.svg) no-repeat center 50%;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
