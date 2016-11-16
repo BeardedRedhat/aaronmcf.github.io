@@ -1002,8 +1002,8 @@
         second = now.getSeconds();
         document.write("Last updated on " +date+ "/" +month+ "/" +year+ " " +hour+ ":" +minute+ ":" +second);
 
-        /**** function to add code into contentEditable ****/
 
+        //**** function to add code into contentEditable ****
         function addCode() {
             event.preventDefault();
             console.log(document.getElementById("logs"));
@@ -1016,11 +1016,14 @@
                 }
             });
 
+
             var media = document.getElementsByClassName("media-body");
             for(var x=0; x<media.length; x++)
             {
                 console.log("test");
-            }
+                media[x] = document.getElementsByClassName("media-body").innnerHTML = "<code>&nbsp;</code>";
+                console.log(media[x]);
+            }//test for loop
 
 //            $("#logs .media .media-body").each(function() {
 //                console.log($(this));
