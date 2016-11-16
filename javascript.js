@@ -212,6 +212,7 @@ function goBack() {
     console.log("Previous");
 }
 
+
 //***** scroll to top button in myLogs.html *****//
 jQuery(document).ready(function($)
 {

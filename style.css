@@ -25,7 +25,7 @@ a:hover { text-decoration: underline; }
     height: 57px;
 }
 
-.navbar { background-color: transparent;  }
+.navbar { background-color: transparent; }
 .scrolling-navbar {
     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
