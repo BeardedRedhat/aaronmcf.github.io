@@ -83,7 +83,7 @@ footer.page-footer {
 }
 
 #profileBkg {
-    background: url(img/profileBkg.jpg)no-repeat center center fixed;
+    background: url(img/backgrounds/profileBkg.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,7 +100,7 @@ footer.page-footer {
 }
 
 #jumbotronFeed {
-    background: url(img/myProfile.jpg) no-repeat center center fixed;
+    background: url(img/backgrounds/myProfile.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
