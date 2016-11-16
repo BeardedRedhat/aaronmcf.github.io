@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
@@ -48,9 +49,26 @@
 
 
     </style>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#outerDiv").find("div").each(function() {
+                console.log($(this).text());
+            })
+        })
+
+
+    </script>
+
 </head>
 <body>
 
+<div id="outerDiv">
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+</div>
 
 
 <!-----------------------------------
