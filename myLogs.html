@@ -220,6 +220,12 @@
                 <td>14/11/2016</td>
                 <td align="center"><a href="myLogs.html#log16" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
             </tr>
+            <tr>
+                <td>Aaron McFarland</td>
+                <td>#017 Using Internet Services</td>
+                <td>17/11/2016</td>
+                <td align="center"><a href="myLogs.html#log17" data-toggle="tooltip" data-placement="bottom" title="View"><i class="material-icons transition1">search</i></a></td>
+            </tr>
             </tbody>
         </table>
     </div>
@@ -927,31 +933,47 @@
 
 
 
-    <!--<a NAME="logTest"></a>
-    <div class="media">
-        <div class="media-left">
-            <a href="myProfile.html" >
-                <img class="img-circle" src="img/me.jpg" width="64px" height="64px" alt="Profile Photo">
-            </a>
-        </div>
-        <div class="media-body">
-            <h4 class="media-heading">Test 1</h4>
-            <p><i>Tuesday 25th October 2016</i></p>
-
-            <div class="editContent" contenteditable="true" id="editLog9" onblur="saveChanges()">
-
-                <?php include("logs.txt"); ?>
-
+        <a NAME="log17"></a>
+        <div class="media">
+            <div class="media-left">
+                <a href="myProfile.html">
+                    <img class="img-circle mediaPic" src="img/me.jpg" alt="Profile Photo">
+                </a>
             </div>
-
+            <div class="media-body">
+                <h4 class="media-heading">#017 Using Internet Services</h4>
+                <p><i>Thursday 17th November 2016</i></p>
+                <p class="logEdit">Boolean operators are the symbols we use to connect different search criteria together to either get more refined or broadened results, with the three operators being AND, OR and NOT <code>(&&, ||, !).</code> The AND operator is
+                    applied whenever you want to search using all the specified criteria to get more refined results, e.g. in this if statement, <code>if(x<3 && y=true && z>x)</code>, all three conditions will be checked and will only run if all three are true.
+                    The OR operator is used when we wish to broaden our results, as it will return if any of the criteria are true, even if the others return false, e.g. in this statement, <code>if(x<3 || y=true || z>x)</code>, the statement will run if any of
+                    the three conditions are true. And finally, the NOT operator will tell the computer to do the opposite, i.e. <code>if(pwordCheck != password)</code> will run the if statement if the pwordCheck variable is NOT equal to the password variable.</p>
+                <p class="logEdit">In most search engines you can now use boolean operators when searching to give you a more accurate and refined search results. In Google’s search engine, we can use the boolean operators by using the keyword in caps, for
+                    example, search1 AND search2 will search for both words on either side of the operator. This works for the other OR and NOT operators, simply by typing in the word in-between the searches. For any websites out there that wish to be found
+                    where searched for, using keywords is the connector that give the websites search engine optimisation (SEO), linking any content or pages so that if someone has searched for it, the website will be shown. </p>
+                <p class="logEdit">Search sites, or search engines, are websites designed to search and aggregate a range of websites based upon the users search criteria. Search engines such as Google is used over 40,000 times a second, which accumulates
+                    to over 3.5 billion searches per day. An Information portal however, provides a single gateway to many different sources of information and media, most commonly used by businesses or students. A web page is then based upon a certain
+                    business or topic to either provide information or perform a service, e.g. youtube.com for streaming videos. </p>
+                <p class="logEdit">Meta search engines are what we use to essentially collate results from all the top results from all search engines, then apply their own algorithms to the results. A meta search engine will search the entered string and
+                    search it into different engines to then compile a series of results from each. This uses whats called a virtual database by running a query on the other engine databases giving the opportunity to find a mixture of popular and obscure
+                    websites. To enhance the accuracy and overall performance of search engines, they release spiders or web crawlers to browse the World Wide Web creating a search engine index. Spiders will take it upon themselves to index every word on
+                    the page and following every link to ensure that everything is accounted for by taking note of two things in the html: the words within the page and where the words are found. Spiders are very fast travelling, with some able to crawl over
+                    25 pages per second and generate over 150 kbp/s of data, meaning that if a company were to release a large amount of spiders, they could respectively search a large portion of websites to give more accurate search engine results. </p>
+                <p class="logEdit">Researching into different articles or papers can be a tedious task in that there are thousands available for most subjects. However, some papers may not be completely accurate or can vary from the truth which is why
+                    you’ll find papers that are peer-reviewed. There are two different types of peer review: authoritative and open. Authoritative peer review refers to papers that are reviewed by a small group of authors or researchers that will generally
+                    be experts in that particular field, but the feedback will be completely anonymous, whereas open peer reviews use a more open group of people, who many not be experts in the field, but would have adequate knowledge to provide some
+                    feedback relating to the paper. Open peer reviews are also not anonymous, meaning that the author can see who reviewed the paper. </p>
+                <p class="logEdit"></p>
+            </div>
         </div>
-    </div>
-    <hr />-->
+        <hr />
+
+
+
     </div>
 </div>
 
 
-<script type="text/javascript">
+<script>
     if (typeof(Storage) !== "undefined")
     {
         // Store
@@ -977,7 +999,7 @@
                 "In my code, I inserted a &ltdiv&gt with an id=“result” to display the stored content." + "</p>");
 
         // Retrieve
-        document.getElementById("result").innerHTML = localStorage.getItem("log");
+        //document.getElementById("result").innerHTML = localStorage.getItem("log");
     }
     else
     {
@@ -989,7 +1011,6 @@
 </script>
 
 <a href="#0" class="cd-top">Top</a>
-<a href="#0" class="cd-top2">Top2</a>
 
 <div class="lastUpdated">
     <script>
@@ -1016,7 +1037,7 @@
                     $(this).innerHTML = $(this).innerHTML + "<code>&nbsp;</code>";
                 }
             });
-            
+
 //            $("#logs .media .media-body").each(function() {
 //                console.log($(this));
 //                if($(this).is(":focus"))

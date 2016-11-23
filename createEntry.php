@@ -22,10 +22,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $user = $_POST["fullName"];
         $title = $_POST["logTitle"];
-        $today = date("Y-m-d", strtotime($_POST["date"]));
+        $today = DateTime::createFromFormat('d/m/Y',$_POST['date']);
+        $today = $today -> format('Y-m-d');
         $log = $_POST["textarea"];
-        echo $log;
-        echo $_POST['test'];
+        echo $today;
         $sql = "INSERT INTO logs(user, title, date_created, log_entry) VALUES(:user,:title,:today,:log)";
         $stmt = $db -> prepare($sql);
         $stmt -> bindParam(':user', $user);
@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $stmt -> bindParam(':today', $today);
         $stmt -> bindParam(':log', $log);
         $stmt->execute();
-        echo "Success";
+        echo " Success";
     }
 }
 else {
@@ -148,9 +148,6 @@ else {
                     </div>
 
                     <!--placeholder="Enter Date, e.g Fri 5th Sep 2016"-->
-                    <div id="output1"></div>
-                    <div id="output2"></div>
-                    <div id="output3"></div>
 
                 </form>
             </div>
@@ -180,6 +177,8 @@ else {
                 date = document.getElementById("date").value,
                 log = document.getElementById("textarea").value,
                 xhttp = new XMLHttpRequest();
+
+            console.log(date);
 
             do
             {
