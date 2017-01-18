@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SFA ESF Youth Talent Programme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="styleV2.css" rel="stylesheet">
+
+    <style>
+        body { font-size: 14px; }
+        h3, h4 { padding-left: 5px; }
+
+        .image { position: relative; }
+
+        #partnerOrgInput { padding-bottom: 10px; }
+
+        #logos {
+            width: 50%;
+            height: 50%;
+            position: relative;
+            float: right;
+        }
+
+        .container {
+            padding-top: 20px;
+        }
+
+
+        .cell {
+            height: 100%;
+            vertical-align: middle;
+            line-height: 25px;
+        }
+
+        .sectionHead {
+            height: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: #35849a;
+        }
+
+        .section1Sub {
+            /*height: 40px;*/
+            font-weight: 600;
+        }
+
+
+        .panel-default > .panel-heading.sectionSub {
+            height: 40px;
+            font-weight: 600;
+            background-color: #b7dde7;
+        }
+
+        .splitCell {
+            height: 100%;
+        }
+
+
+        .standardLabel {
+            font-weight: normal;
+        }
+
+        .padLeft {
+            padding-left: 10px;
+        }
+
+        ::-webkit-input-placeholder {
+            font-size: 13px;
+            vertical-align: center;
+            line-height: 20px;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            font-size: 13px;
+            vertical-align: center;
+            line-height: 20px;
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+            font-size: 12px;
+            vertical-align: center;
+            line-height: 20px;
+        }
+
+        :-ms-input-placeholder {
+            font-size: 12px;
+            vertical-align: center;
+            line-height: 20px;
+        }
+
+        .radioLabel label {
+            width: 90%;
+        }
+
+        .radioLabel input {
+            margin-top: .3em;
+            vertical-align: top;
+            margin-right: 3px;
+        }
+
+        #actions {
+            padding-bottom: 12px;
+        }
+
+        .signature {
+            border: dashed 1px black;
+        }
+
+        .panel-default > .panel-heading.sectionHead {
+            font-weight: 700;
+            background-color: #35849a !important;
+            font-size: 18px;
+            height: 100%;
+            vertical-align: middle;
+            line-height: 25px;
+        }
+
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: #efefef;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form id="pageForm">
+
+        <!---------- title and logo ---------->
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 title">
+                <h3>SFA ESF Youth Talent Programme</h3>
+                <h4>Initial Application Form/Learner Assessment</h4>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <div class="image">
+                    <img src="img/logos.jpg" id="logos">
+                </div>
+            </div>
+        </div>
+
+        <!---------- SECTION 1 - Key Information ---------->
+        <div class="panel panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading sectionHead">Part 1 - Key Information</div>
+                <div class="panel-body">
+
+                    <div class="row section1Sub" id="partnerOrgInput">
+                        <div class="cell col-xs-12 col-sm-2 col-md-2 col-lg-2">Partner Organisation:</div>
+                        <div class="cell col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <input type="text" class="form-control" placeholder="" id="partnerOrg">
+                        </div>
+
+                    </div>
+
+                    <!---------- Learner Details ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Learner Details</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="uln" class="standardLabel" >Unique Learner Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter your 10-digit ULN" id="uln">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="london" class="standardLabel">London Borough</label>
+                                    <input type="text" class="form-control" id="london" placeholder="e.g. Camden">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="cell col-xs-12 col-sm-6 col-md-6 col-lg-6">Title: &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="title" id="mr" value="Mr">
+                                    <label for="mr" class="standardLabel">Mr &nbsp;</label>
+
+                                    <input type="radio" name="title" id="mrs" value="Mrs">
+                                    <label for="mrs" class="standardLabel">Mrs &nbsp;</label>
+
+                                    <input type="radio" name="title" id="miss" value="Miss">
+                                    <label for="miss" class="standardLabel">Miss &nbsp;</label>
+
+                                    <input type="radio" name="title" id="ms" value="Ms">
+                                    <label for="ms" class="standardLabel">Ms &nbsp;</label>
+
+                                    <input type="radio" name="title" id="other" value="Other">
+                                    <label for="other" class="standardLabel">Other: &nbsp; </label>
+                                </div>
+                                <div class="cell col-xs-12 col-sm-6 col-md-6 col-lg-6">Gender: &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label for="male" class="standardLabel">Male &nbsp;</label>
+
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label for="female" class="standardLabel">Female &nbsp;</label>
+
+                                    <input type="radio" name="gender" id="pns" value="PNS">
+                                    <label for="pns" class="standardLabel">PNS &nbsp;</label>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="firstName" class="standardLabel">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Joe">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="nationalIns" class="standardLabel">National Insurance Number</label>
+                                    <input type="text" class="form-control" id="nationalIns" placeholder="e.g. PA123456B">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="surname" class="standardLabel">Surname</label>
+                                    <input type="text" class="form-control" id="surname" placeholder="Blogs">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="dob" class="standardLabel">Date of Birth</label>
+                                    <input type="text" class="form-control" id="dob" placeholder="DD/MM/YYYY">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="address" class="standardLabel">Address</label>
+                                    <textarea class="form-control" id="address" rows="8" placeholder="e.g. 1 Western Road, Brighton, East Sussex, England"></textarea>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="mobileTel" class="standardLabel">Mobile Tel No</label>
+                                    <input type="text" class="form-control" id="mobileTel" placeholder="e.g. 07234 567890">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="homeTel" class="standardLabel">Home Tel No</label>
+                                    <input type="text" class="form-control" id="homeTel" placeholder="Include area code">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="email" class="standardLabel">Email address</label>
+                                    <input type="text" class="form-control" id="email" placeholder="example@mail.com">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="postcode" class="standardLabel">Postcode</label>
+                                    <input type="text" class="form-control" id="postcode" placeholder="e.g. BN1 2LB">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="otherContact" class="standardLabel">Other contact </label>
+                                    <input type="text" class="form-control" id="otherContact" placeholder="e.g. WhatsApp, Twitter">
+                                </div>
+                            </div>
+                        </div>  <!-- Learner Details panel body -->
+                    </div>      <!-- Learner Details panel -->
+                    <br>
+
+
+                    <!---------- Health Condition ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Health Condition</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <p class="padLeft">Do you consider yourself to have a disability, long term health problem or learning difficulty?</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="radio" name="haveDis" id="yes" value="Yes" onclick="enableHealth()">
+                                    <label for="yes" class="standardLabel">Yes &nbsp;</label>
+
+                                    <input type="radio" name="haveDis" id="no" value="No" onclick="disableHealth()">
+                                    <label for="no" class="standardLabel">No &nbsp;</label>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p class="padLeft">If you have ticked yes to the answer above, please tick the most appropriate box(es) below. We may be able to signpost you to
+                                        organisations who offer additional specialist support while on the course.</p><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <p class="padLeft"><b>Disability/Health Problem</b></p>
+
+                                    <input type="radio" name="disability" id="visual" value="Visual Impairment">
+                                    <label for="visual" class="standardLabel">Visual Impairment &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="hearing" value="Hearing Impairment">
+                                    <label for="hearing" class="standardLabel">Hearing Impairment &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="mobility" value="Disability affecting mobility">
+                                    <label for="mobility" class="standardLabel">Disability affecting mobility &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="otherDis" value="Other physical disability">
+                                    <label for="otherDis" class="standardLabel">Other physical disability &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="behavioural" value="Emotional/behavioural difficulties">
+                                    <label for="behavioural" class="standardLabel">Emotional/behavioural difficulties &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="physical" value="Other physical disability">
+                                    <label for="physical" class="standardLabel">Other physical disability &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="mental" value="Mental health difficulty">
+                                    <label for="mental" class="standardLabel">Mental health difficulty &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="nutallergy" value="Nut allergy">
+                                    <label for="nutallergy" class="standardLabel">Nut allergy &nbsp;</label><br><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                                    <br>
+                                    <input type="radio" name="disability" id="complex" value="Profound complex disabilities">
+                                    <label for="complex" class="standardLabel">Profound complex disabilities &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="aspergers" value="Asperger’s syndrome">
+                                    <label for="aspergers" class="standardLabel">Asperger’s syndrome &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="multiple" value="Multiple disabilities">
+                                    <label for="multiple" class="standardLabel">Multiple disabilities &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="speech" value="Speech, Language and Communication needs">
+                                    <label for="speech" class="standardLabel">Speech, Language and Communication needs &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="asthma" value="Asthma">
+                                    <label for="asthma" class="standardLabel">Asthma &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="epilepsy" value="Epilepsy">
+                                    <label for="epilepsy" class="standardLabel">Epilepsy &nbsp;</label><br>
+
+                                    <input type="radio" name="disability" id="otherSpec" value="Other (Please specify here) ">
+                                    <label for="otherSpec" class="standardLabel">Other (Please specify here) &nbsp;</label><br>
+
+                                    <input type="text" title="other" class="form-control" id="otherInput" placeholder="">
+                                    <br><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <p class="padLeft"><b>Learning Difficulty</b></p>
+
+                                    <input type="radio" name="learningDiff" id="moderate" value="Moderate learning difficulty">
+                                    <label for="moderate" class="standardLabel">Moderate learning difficulty &nbsp;</label><br>
+
+                                    <input type="radio" name="learningDiff" id="severe" value="Severe Learning difficulty">
+                                    <label for="severe" class="standardLabel">Severe Learning difficulty &nbsp;</label><br>
+
+                                    <input type="radio" name="learningDiff" id="dyslexia" value="Dyslexia">
+                                    <label for="dyslexia" class="standardLabel">Dyslexia &nbsp;</label><br>
+
+                                    <input type="radio" name="learningDiff" id="autism" value="Autism spectrum disorder">
+                                    <label for="autism" class="standardLabel">Autism spectrum disorder &nbsp;</label><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                                    <br>
+                                    <input type="radio" name="learningDiff" id="multipleL" value="Multiple learning difficulties">
+                                    <label for="multipleL" class="standardLabel">Multiple learning difficulties &nbsp;</label><br>
+
+                                    <input type="radio" name="learningDiff" id="dyscalculia" value="Dyscalculia">
+                                    <label for="dyscalculia" class="standardLabel">Dyscalculia &nbsp;</label><br>
+
+                                    <input type="radio" name="learningDiff" id="otherLearn" value="Other specific learning difficulty (please specify here)">
+                                    <label for="otherLearn" class="standardLabel">Other specific learning difficulty (please specify here)  &nbsp;</label><br>
+
+                                    <input type="text" title="other" class="form-control" id="otherLearnInput">
+                                </div>
+                            </div>
+                        </div>      <!-- health panel body -->
+                    </div>          <!-- health panel -->
+                    <br>
+
+
+                    <!---------- Ethnic Group ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Ethnic Group (Please check the most appropriate box)</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="padLeft"><b>White</b></p>
+
+                                    <input type="radio" name="ethnic" id="uk" value="English / Welsh / Scottish / Northern Irish / British (31)">
+                                    <label for="uk" class="standardLabel">English / Welsh / Scottish / Northern Irish / British (31)</label><br>
+
+                                    <input type="radio" name="ethnic" id="irish" value="Irish (32)">
+                                    <label for="irish" class="standardLabel">Irish (32)</label><br>
+
+                                    <input type="radio" name="ethnic" id="traveller" value="Gypsy or Irish Traveller (33)">
+                                    <label for="traveller" class="standardLabel">Gypsy or Irish Traveller (33)</label><br>
+
+                                    <input type="radio" name="ethnic" id="anyOther" value="Any other White background (34)">
+                                    <label for="anyOther" class="standardLabel">Any other White background (34)</label><br><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="padLeft"><b>Mixed / Multiple ethnic group</b></p>
+
+                                    <input type="radio" name="ethnic" id="wbcarribean" value="White and Black Caribbean (35)">
+                                    <label for="wbcarribean" class="standardLabel">White and Black Caribbean (35)</label><br>
+
+                                    <input type="radio" name="ethnic" id="wbafrican" value="White and Black African (36)">
+                                    <label for="wbafrican" class="standardLabel">White and Black African (36)</label><br>
+
+                                    <input type="radio" name="ethnic" id="asian" value="White and Asian (37)">
+                                    <label for="asian" class="standardLabel">White and Asian (37)</label><br>
+
+                                    <input type="radio" name="ethnic" id="multipleEth" value="Any other Mixed / multiple ethnic background (38)">
+                                    <label for="multipleEth" class="standardLabel">Any other Mixed / multiple ethnic background (38)</label><br><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="ccol-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="padLeft"><b>Asian / Asian British</b></p>
+
+                                    <input type="radio" name="ethnic" id="indian" value="Indian (39)">
+                                    <label for="indian" class="standardLabel">Indian (39)</label><br>
+
+                                    <input type="radio" name="ethnic" id="pakistani" value="Pakistani (40)">
+                                    <label for="pakistani" class="standardLabel">Pakistani (40)</label><br>
+
+                                    <input type="radio" name="ethnic" id="bangladeshi" value="Bangladeshi (41)">
+                                    <label for="bangladeshi" class="standardLabel">Bangladeshi (41)</label><br>
+
+                                    <input type="radio" name="ethnic" id="chinese" value="Chinese (42)">
+                                    <label for="chinese" class="standardLabel">Chinese (42)</label><br>
+
+                                    <input type="radio" name="ethnic" id="anyAsian" value="Any other Asian background (43)">
+                                    <label for="anyAsian" class="standardLabel">Any other Asian background (43)</label><br><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <p class="padLeft"><b>Black / African / Caribbean / Black British</b></p>
+
+                                    <input type="radio" name="ethnic" id="african" value="African (44)">
+                                    <label for="african" class="standardLabel">African (44)</label><br>
+
+                                    <input type="radio" name="ethnic" id="carribean" value="Caribbean (45)">
+                                    <label for="carribean" class="standardLabel">Caribbean (45)</label><br>
+
+                                    <input type="radio" name="ethnic" id="anyOtherBAC" value="Any other Black / African / Caribbean background (46)">
+                                    <label for="anyOtherBAC" class="standardLabel">Any other Black / African / Caribbean background (46)</label><br><br>
+
+                                    <p class="padLeft"><b>Other ethnic group</b></p>
+
+                                    <input type="radio" name="ethnic" id="arab" value="Arab (47)">
+                                    <label for="arab" class="standardLabel">Arab (47)</label><br>
+                                </div>
+                            </div>
+
+                        </div>      <!-- Ethnic group panel body -->
+                    </div>          <!-- Ethnic group panel -->
+                    <br>
+
+
+                    <!---------- Benefit and Employment ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Benefit and Employment</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <p><b>Are you in receipt of benefits?</b> Select the correct box:</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <input type="radio" name="benefits" id="noBenef" value="Not on Benefits">
+                                    <label for="noBenef" class="standardLabel">Not on Benefits &nbsp;</label>
+
+                                    <input type="radio" name="benefits" id="jsa" value="JSA/UC">
+                                    <label for="jsa" class="standardLabel">JSA/UC &nbsp;</label>
+
+                                    <input type="radio" name="benefits" id="esa" value="ESA">
+                                    <label for="esa" class="standardLabel">ESA &nbsp;</label>
+
+                                    <input type="radio" name="benefits" id="otherBen" value="Other">
+                                    <label for="otherBen" class="standardLabel">Other: &nbsp;</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="other" class="form-control" id="otherBenefit" placeholder="Other">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <label for="info" class="standardLabel">If yes, please provide the following information:</label>
+                                    <textarea class="form-control" id="info" rows="4" placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </div>      <!-- Benefit panel body -->
+                    </div>          <!-- Benefit panel -->
+                </div>              <!-- SECTION 1 panel body -->
+            </div>                  <!-- SECTION 1 panel -->
+            <br><br><br>
+
+
+
+            <!----------SECTION 2 - Eligibility ---------->
+            <div class="panel panel-default">
+                <div class="panel-heading sectionHead">Part 2 - Eligibility</div>
+                <div class="panel-body"><br>
+
+                    <!---------- Eligibility/Residency ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Eligibility/Residency</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <p>How long have you been living in the UK?</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <input type="text" class="form-control" id="ukresident" placeholder="e.g. 4 years 3 months">
+                                </div>
+                            </div>
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading sectionSub">Please tick one of the following three categories and note down the ID number in the section below</div>
+                                <div class="panel-body">
+
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="radioLabel">
+                                            <input type="radio" name="residency" id="britishCit" value="If you are a British Citizen we need to see and note down the ID number:">
+                                            <label for="britishCit">If you are a British Citizen we need to see and note down the ID number:</label><hr>
+                                        </div>
+                                        <p>If you don’t have your birth certificate we need to see your current United Kingdom of Great Britain and Northern Ireland Passport</p><hr>
+                                        <p>If you don’t have a passport we will need to see your Birth Certificate or some identification which confirms your date of birth</p><hr>
+                                        <p>We will also need you to confirm your National Insurance number</p><hr>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="radioLabel">
+                                            <input type="radio" name="residency" id="euroCit" value="If you are a European Union Citizen we need to see and note down the ID number:">
+                                            <label for="euroCit">If you are a European Union Citizen we need to see and note down the ID number:</label><hr>
+                                        </div>
+                                        <p>Your current Passport from your country of origin within the EU/EEA</p><hr>
+                                        <p>If you don’t have a passport we need to see your Identification card or other suitable document</p><hr>
+                                        <p>We will also need you to confirm your National Insurance number</p><hr>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="radioLabel">
+                                            <input type="radio" name="residency" id="outsideEu" value="If you are a Citizen from outside the UK and EU we need to see, note down ID number and retain a copy:">
+                                            <label for="outsideEu">If you are a Citizen from outside the UK and EU we need to see, note down ID number and <u>retain a copy</u>:</label><hr>
+                                        </div>
+                                        <p>Your Home Office documentation/ Passport stamped with one of the following:<br>
+                                            <i>Indefinite Leave to Enter/Remain</i><br>
+                                            <i>Right of Abode</i><br>
+                                            <i>Refugee Status</i><br>
+                                            <i>Humanitarian Protection</i><br>
+                                            <i>Discretionary Leave</i><br>
+                                            <i>Exceptional Leave to Enter/Remain</i><br>
+                                        </p><hr>
+                                        <p>We will also need you to confirm your National Insurance number</p><hr>
+                                    </div>
+                                </div>  <!-- three categories panel body -->
+                            </div>      <!-- three categories panel -->
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <p><b>ID Number (confirming learner’s eligibility as stated above)</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                                    <input type="text" class="form-control" id="confirmNIno" placeholder="e.g. PA123456B">
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="jobCentre" class="standardLabel">Job Centre Location </label>
+                                    <input type="text" class="form-control" id="jobCentre">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <label for="adviser" class="standardLabel">Adviser name </label>
+                                    <input type="text" class="form-control" id="adviser">
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p>If you are unemployed, <b>how long have you been unemployed?</b> Check the most appropriate box:</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="radio" name="unemployed" id="lessthansix" value="Less than 6 months">
+                                    <label for="lessthansix" class="standardLabel">Less than 6 months</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="radio" name="unemployed" id="sixtoeleven" value="6 - 11 months">
+                                    <label for="sixtoeleven" class="standardLabel">6 - 11 months</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="radio" name="unemployed" id="twelve" value="12 - 23 months">
+                                    <label for="twelve" class="standardLabel">12 - 23 months</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="radio" name="unemployed" id="twentyfour" value="24 - 35 months">
+                                    <label for="twentyfour" class="standardLabel">24 - 35 months</label>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="radio" name="unemployed" id="overthirty" value="Over 36 months">
+                                    <label for="overthirty" class="standardLabel">Over 36 months</label>
+                                </div>
+                            </div>
+                        </div>      <!-- Eligibility panel body -->
+                    </div>          <!-- Eligibility panel -->
+                </div>              <!-- SECTION 2 panel body -->
+            </div>                  <!-- SECTION 2 panel -->
+            <br><br><br>
+
+
+
+            <!---------- SECTION 3 - Education ---------->
+            <div class="panel panel-default">
+                <div class="panel-heading sectionHead">Part 3 - Education</div>
+                <div class="panel-body"><br>
+
+                    <!---------- Qualifications Input ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Please list any past qualifications you have achieved: (You will need to provide your exam certificates or statement of results from school)</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <p><b>Subject</b></p>
+                                    <input type="text" title="qualification" class="form-control" id="english" placeholder="English" disabled>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <p><b>Date Awarded</b></p>
+                                    <input type="text" title="qualification" class="form-control" id="date1" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <p><b>Grade</b></p>
+                                    <input type="text" title="qualification" class="form-control" id="grade1">
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <p><b>Subject</b></p>
+                                    <input type="text" title="qualification" class="form-control" id="maths" placeholder="Maths" disabled>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <p><b>Date Awarded</b></p>
+                                    <input type="text" title="qualification" class="form-control" id="date2" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <p><b>Grade</b></p>
+                                    <input type="text" title="qualification" class="form-control" id="grade2"><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="qualification" class="form-control" id="subject3" placeholder="Subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="qualification" class="form-control" id="date3" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <input type="text" title="qualification" class="form-control" id="grade3"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="qualification" class="form-control" id="subject4" placeholder="Subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="qualification" class="form-control" id="date4" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <input type="text" title="qualification" class="form-control" id="grade4"><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="qualification" class="form-control" id="subject5" placeholder="Subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="qualification" class="form-control" id="date5" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <input type="text" title="qualification" class="form-control" id="grade5"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="qualification" class="form-control" id="subject6" placeholder="Subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="qualification" class="form-control" id="date6" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <input type="text" title="qualification" class="form-control" id="grade6"><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="qualification" class="form-control" id="subject7" placeholder="Subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="qualification" class="form-control" id="date7" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <input type="text" title="qualification" class="form-control" id="grade7"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <input type="text" title="qualification" class="form-control" id="subject8" placeholder="Subject">
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="qualification" class="form-control" id="date8" placeholder="MM/YYYY">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <input type="text" title="qualification" class="form-control" id="grade8"><br>
+                                </div>
+                            </div>
+                        </div>      <!-- Qualifications panel body -->
+                    </div>          <!-- Qualification panel -->
+                    <br>
+
+
+                    <!---------- GCSE English/Maths ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Please check the appropriate box below if grade C or above already achieved in GCSE English and/or Maths</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <input type="radio" name="gcseMaths" id="mathsByEnd" value="GCSE Maths (at grade A*-C) achieved by end of Year 11">
+                                    <label for="mathsByEnd" class="standardLabel">&nbsp; GCSE Maths (at grade A*-C) achieved by end of Year 11</label><br>
+
+                                    <input type="radio" name="gcseMaths" id="mathsSince" value="GCSE Maths (at grade A*-C) achieved since end of Year 11">
+                                    <label for="mathsSince" class="standardLabel">&nbsp; GCSE Maths (at grade A*-C) achieved since end of Year 11</label><br>
+
+                                    <input type="radio" name="gcseMaths" id="mathsNot" value="GCSE Maths (at grade A*-C) not yet achieved">
+                                    <label for="mathsNot" class="standardLabel">&nbsp; GCSE Maths (at grade A*-C) not yet achieved</label><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <input type="radio" name="gcseEnglish" id="engByEnd" value="GCSE English (at grade A*-C) achieved by end of Year 11">
+                                    <label for="engByEnd" class="standardLabel">&nbsp; GCSE English (at grade A*-C) achieved by end of Year 11</label><br>
+
+                                    <input type="radio" name="gcseEnglish" id="engSince" value="GCSE English (at grade A*-C) achieved since end of Year 11">
+                                    <label for="engSince" class="standardLabel">&nbsp; GCSE English (at grade A*-C) achieved since end of Year 11</label><br>
+
+                                    <input type="radio" name="gcseEnglish" id="engNot" value="GCSE English (at grade A*-C) not yet achieved">
+                                    <label for="engNot" class="standardLabel">&nbsp; GCSE English (at grade A*-C) not yet achieved</label><br>
+                                </div>
+                            </div>
+                            <br><br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p><b>*Learner Record Service – Check the relevant box*</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <input type="radio" name="LRS" id="checked" value="LRS checked by centre admin and report printed">
+                                    <label for="checked" class="standardLabel">&nbsp; LRS checked by centre admin and report printed</label><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <input type="radio" name="LRS" id="notReg" value="Learner not registered on LRS">
+                                    <label for="notReg" class="standardLabel">&nbsp; Learner not registered on LRS</label><br>
+                                </div>
+                            </div>
+                        </div>      <!-- GCSE English/Maths panel body -->
+                    </div>          <!-- GCSE English/Maths panel -->
+                    <br>
+
+
+                    <!---------- Interests/Experience ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">What kind of future work/career are you most interested in? What work experience have you got?</div>
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <textarea class="form-control" id="experience" rows="10" placeholder="E.g. Office, retail, warehouse, engineering"></textarea>
+                                </div>
+                            </div>
+                        </div>      <!-- Interests/Experience panel body -->
+                    </div>          <!-- Interests/Experience panel -->
+                </div>              <!-- SECTION 3 panel body -->
+            </div>                  <!-- SECTION 3 panel -->
+            <br><br><br>
+
+
+
+            <!---------- SECTION 4 - Learner Plan Action ---------->
+            <div class="panel panel-default">
+                <div class="panel-heading sectionHead">Part 4 – Learner Action Plan (To be completed by Partner/STUK Mentor and Customer)</div>
+                <div class="panel-body"><br>
+
+
+                    <!---------- Assessment of Functional Skills ---------->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading sectionSub">Assessment of Functional Skills</div>
+                                <div class="panel-body">
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <p><b>Functional Skills Diagnostic Results</b></p><hr>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                            <br><p><i>ICT</i></p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+                                            <label for="ictDate" class="standardLabel">Date of Assessment:</label>
+                                            <input type="text" class="form-control" id="ictDate" placeholder="DD/MM/YYYY">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <label for="ictGrade" class="standardLabel">Result</label>
+                                            <input type="text" class="form-control" id="ictGrade">
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                            <br><p><i>English</i></p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+                                            <label for="engDate" class="standardLabel">Date of Assessment:</label>
+                                            <input type="text" class="form-control" id="engDate" placeholder="DD/MM/YYYY">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <label for="engGrade" class="standardLabel">Result</label>
+                                            <input type="text" class="form-control" id="engGrade">
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                            <br><p><i>Mathematics</i></p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+                                            <label for="mathsDate" class="standardLabel">Date of Assessment:</label>
+                                            <input type="text" class="form-control" id="mathsDate" placeholder="DD/MM/YYYY">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <label for="mathsGrade" class="standardLabel">Result</label>
+                                            <input type="text" class="form-control" id="mathsGrade"><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!---------- Actions to be taken ---------->
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading sectionSub">Detail the actions to be taken and support to be provided to individual</div>
+                                <div class="panel-body">
+
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <textarea class="form-control" title="actions" id="actions" rows="16" placeholder="Detail here"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <!---------- Action Details ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Action Details</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <p><b>Action to be undertaken</b></p>
+                                    <textarea class="form-control" title="actions" id="action1" rows="3" placeholder="Work Preparation – Non-accredited Learning Aim Z0007872 – Preparation for Work (up to 12 hours). This will be evidenced through attendance on the programme" disabled></textarea>
+                                    <br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <p><b>Start Date</b></p>
+                                    <input type="text" title="startDate" class="form-control" id="start1" placeholder="DD/MM/YYYY"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <p><b>End Date</b></p>
+                                    <input type="text" title="endDate" class="form-control" id="end1" placeholder="DD/MM/YYYY"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <p><b>Completion Date</b></p>
+                                    <input type="text" title="completeDate" class="form-control" id="complete1" placeholder="DD/MM/YYYY"><br>
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <textarea class="form-control" title="actions" id="action2" rows="3" placeholder="Action"></textarea><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="startDate" class="form-control" id="start2" placeholder="Start Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="endDate" class="form-control" id="end2" placeholder="End Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="completeDate" class="form-control" id="complete2" placeholder="Completion Date"><br>
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <textarea class="form-control" title="actions" id="action3" rows="3" placeholder="Action"></textarea><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="startDate" class="form-control" id="start3" placeholder="Start Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="endDate" class="form-control" id="end3" placeholder="End Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="completeDate" class="form-control" id="complete3" placeholder="Completion Date"><br>
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <textarea class="form-control" title="actions" id="action4" rows="3" placeholder="Action"></textarea><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="startDate" class="form-control" id="start4" placeholder="Start Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="endDate" class="form-control" id="end4" placeholder="End Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="completeDate" class="form-control" id="complete4" placeholder="Completion Date"><br>
+                                </div>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <textarea class="form-control" title="actions" id="action5" rows="3" placeholder="Action"></textarea><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="startDate" class="form-control" id="start5" placeholder="Start Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="endDate" class="form-control" id="end5" placeholder="End Date"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <input type="text" title="completeDate" class="form-control" id="complete5" placeholder="Completion Date"><br>
+                                </div>
+                            </div>
+                        </div>      <!-- Actions details panel body -->
+                    </div>          <!-- Actions details panel -->
+                </div>              <!-- SECTION 4 panel body -->
+            </div>                  <!-- SECTION 4 panel -->
+            <br><br><br>
+
+
+
+            <!---------- SECTION 5 - Declaration ---------->
+            <div class="panel panel-default">
+                <div class="panel-heading sectionHead">Part 5 - Declaration</div>
+                <div class="panel-body"><br>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <p>Skills Training UK collects and uses Personal data and Sensitive Personal data, for example about
+                                its’ staff and service users, to fulfil its’ purpose and to meet its’ statutory obligations. Skills
+                                Training UK recognises that Personal data and Sensitive Personal data is the property of the
+                                individual and it regards the lawful and correct treatment of personal data as very important. To
+                                this end, Skills Training UK fully supports and adheres to the Eight Principles of Data Protection
+                                as set out in the Act.</p><br>
+
+                            <p>The personal information you provide is passed to the Chief Executive of Skills Funding (“the Agency”)
+                                and, when needed, the Department for Education, including the Education Funding Agency to meet legal
+                                responsibilities under the Apprenticeships, Skills, Children and Learning Act 2009, and for the Agency’s
+                                Learning Records Service (LRS) to create and maintain a unique student number (ULN). The information you
+                                provide may be shared with other organisations for education, training and employment–related purposes,
+                                including for research. Further information about use of and access to your personal data, and details
+                                of organisations with whom we regularly share data are available at:
+                                <a href="http://skillsfundingagency.bis.gov.uk/privacy.htm">http://skillsfundingagency.bis.gov.uk/privacy.htm.</a></p><br>
+
+                            <p>The EFA/SFA are ESF Co-Financing Organisations, and they may use your information to enable them to access ESF funds.
+                                You may be contacted after you have completed the programme of learning to establish whether you have entered
+                                employment or gone onto further education.</p><br>
+
+                            <p>Tick any of the following if you do not wish to be contacted for other purposes:</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-lg-12">
+                            <input type="radio" name="noContactCourses" id="courses" value="About courses or learning opportunities">
+                            <label for="courses" class="standardLabel">&nbsp; About courses or learning opportunities &nbsp;&nbsp;&nbsp;</label>
+
+                            <input type="radio" name="noContactSurveys" id="surveys" value="For surveys and research">
+                            <label for="surveys" class="standardLabel">&nbsp; For surveys and research &nbsp;&nbsp;&nbsp;</label>
+
+                            <input type="radio" name="noContactPost" id="post" value="By post">
+                            <label for="post" class="standardLabel">&nbsp; By post &nbsp;&nbsp;&nbsp;</label>
+
+                            <input type="radio" name="noContactPhone" id="phone" value="By phone">
+                            <label for="phone" class="standardLabel">&nbsp; By phone &nbsp;&nbsp;&nbsp;</label>
+
+                            <input type="radio" name="noContactEmail" id="contEmail" value="By email">
+                            <label for="contEmail" class="standardLabel">&nbsp; By email &nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <!---------- Learner Declaration ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Learner Declaration</div>
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p>I confirm that I have received an explanation of the above and have been given the relevant information to keep.
+                                        I can also confirm that I understand the above information and my responsibilities under the programme. As part
+                                        of my induction onto the programme I have been informed and understand that the activity delivered by the
+                                        provider named on this form is funded by the European Social Fund. I give my consent for all information I have
+                                        given to be kept on a computer database and forwarded to the Skills Funding Agency and other relevant bodies. I
+                                        understand and have been made aware that this programme is funded by the Skills Funding Agency and is co-financed
+                                        through the European Social Fund. Skills Training UK are the Prime Contractor for this contract and the Partner
+                                        Organisation are sub-contracting from Skills Training UK to deliver the Youth Talent programme. I understand that
+                                        Skills Training UK can be contacted separately should I have an issue or complaint which cannot be resolved with
+                                        the Partner Organisation.</p><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                    <p><b>Learner Name:</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                    <input type="text" title="learnerName" class="form-control" id="learnerName"><br>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 signature">
+                                    <p>*signature box*</p>
+                                    <!-- Signature here -->
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <p><b>Date:</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <input type="text" title="decDate" class="form-control" id="decDate" placeholder="DD/MM/YYYY"><br>
+                                </div>
+                            </div>
+                        </div>      <!-- Learner Declaration panel body -->
+                    </div>          <!-- Learner Declaration panel -->
+                    <br>
+
+
+                    <!---------- Contractor Declaration ---------->
+                    <div class="panel panel-default">
+                        <div class="panel-heading sectionSub">Contractor Declaration</div>
+                        <div class="panel-body">
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p>I confirm that the information on this form is correct and I declare that I have supported the Learner with the
+                                        completion of this document and to the best of my knowledge from the information given the above named person is
+                                        eligible for the Youth Talent programme and in turn SFA and ESF co-financed provision.</p><br>
+
+                                    <p>I confirm the original documents have been provided and that a certified copy has been taken of all necessary
+                                        paperwork to confirm eligibility</p><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <p><b>Name:</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <input type="text" title="contName" class="form-control" id="contName">
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <p><b>Position:</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <input type="text" title="contPosition" class="form-control" id="contPosition"><br>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 signature">
+                                    <p>*signature box*</p>
+                                    <!-- Signature here -->
+                                </div>
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
+                                    <p><b>Date:</b></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <input type="text" title="contDate" class="form-control" id="contDate" placeholder="DD/MM/YYYY"><br>
+                                </div>
+                            </div>
+                        </div>      <!-- Contractor declaration panel body -->
+                    </div>          <!-- Contractor declaration panel -->
+                    <br>
+
+
+                    <div class="panel-footer">
+                        <div class="saveBtn" align="center">
+                            <button type="button" id="saveBtn" class="btn btn-primary">Save and Submit</button>
+                        </div>
+                    </div>
+                </div>              <!-- SECTION 5 panel body -->
+            </div>                  <!-- SECTION 5 panel -->
+        </div>                      <!-- Panel group -->
+    </form>
+</div>                              <!-- Container -->
+
+<script>
+    function disableHealth()
+    {
+        document.getElementById("visual").disabled = true;
+        document.getElementById("hearing").disabled = true;
+        document.getElementById("mobility").disabled = true;
+        document.getElementById("otherDis").disabled = true;
+        document.getElementById("behavioural").disabled = true;
+        document.getElementById("physical").disabled = true;
+        document.getElementById("mental").disabled = true;
+        document.getElementById("nutallergy").disabled = true;
+        document.getElementById("complex").disabled = true;
+        document.getElementById("aspergers").disabled = true;
+        document.getElementById("multiple").disabled = true;
+        document.getElementById("speech").disabled = true;
+        document.getElementById("asthma").disabled = true;
+        document.getElementById("epilepsy").disabled = true;
+        document.getElementById("otherSpec").disabled = true;
+        document.getElementById("otherInput").disabled = true;
+        document.getElementById("moderate").disabled = true;
+        document.getElementById("severe").disabled = true;
+        document.getElementById("dyslexia").disabled = true;
+        document.getElementById("autism").disabled = true;
+        document.getElementById("multipleL").disabled = true;
+        document.getElementById("dyscalculia").disabled = true;
+        document.getElementById("otherLearn").disabled = true;
+        document.getElementById("otherLearnInput").disabled = true;
+    }
+
+    function enableHealth()
+    {
+        document.getElementById("visual").disabled = false;
+        document.getElementById("hearing").disabled = false;
+        document.getElementById("mobility").disabled = false;
+        document.getElementById("otherDis").disabled = false;
+        document.getElementById("behavioural").disabled = false;
+        document.getElementById("physical").disabled = false;
+        document.getElementById("mental").disabled = false;
+        document.getElementById("nutallergy").disabled = false;
+        document.getElementById("complex").disabled = false;
+        document.getElementById("aspergers").disabled = false;
+        document.getElementById("multiple").disabled = false;
+        document.getElementById("speech").disabled = false;
+        document.getElementById("asthma").disabled = false;
+        document.getElementById("epilepsy").disabled = false;
+        document.getElementById("otherSpec").disabled = false;
+        document.getElementById("otherInput").disabled = false;
+        document.getElementById("moderate").disabled = false;
+        document.getElementById("severe").disabled = false;
+        document.getElementById("dyslexia").disabled = false;
+        document.getElementById("autism").disabled = false;
+        document.getElementById("multipleL").disabled = false;
+        document.getElementById("dyscalculia").disabled = false;
+        document.getElementById("otherLearn").disabled = false;
+        document.getElementById("otherLearnInput").disabled = false;
+
+    }
+</script>
+
+</body>
+</html>
